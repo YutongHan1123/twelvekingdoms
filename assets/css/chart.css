@@ -1,0 +1,53 @@
+div.tooltip {
+        position: absolute;
+        text-align: left;
+        width: 160px;
+        height: 80px;
+        font: 15px sans-serif;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background: #fff;
+        pointer-events: none;
+      }
+.links {
+			  stroke: #ccc;
+			}
+
+.nodes text {
+  pointer-events: none;
+  font: sans-serif;
+}
+
+.bar {
+            fill: #d63447;
+            opacity: 0.8;
+        }
+
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: #ccc;
+            shape-rendering: crispEdges;
+        }
+        .axis text {
+          fill: #ccc;
+          font-size: 18px;
+        }
+
+        .bullet-select {
+          display: block;
+          color: white;
+          cursor: pointer;
+          background: #d63447;
+          opacity: 0.8;
+          border: 2px solid white;
+          font-size: 18px;
+          padding: 0.5em;
+          padding-right: 2em;
+          -webkit-border-radius:4px;
+          -moz-border-radius:4px;
+          border-radius:4px;
+          /* -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none; */
+        }
