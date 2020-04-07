@@ -17,7 +17,7 @@ var margin = {
             .style("opacity", 0);
 
 	//Load External Data
-	d3.json("../assets/data/book1.json", function(d){
+	d3.json("assets/data/book1.json", function(d){
 		//Extract data from dataset
 		var nodes = d.nodes,
 			links = d.links;
