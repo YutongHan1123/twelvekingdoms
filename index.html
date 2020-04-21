@@ -571,8 +571,7 @@
 									<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Sed id sem et massa ornare pellentesque. Maecenas pharetra porta accumsan. </p>
 									<section id="bullet"></section>
 									<video id="myVideo" controls autoplay>
-									  <source id="mp4_src" src="video/tree1.mp4" type="video/mp4">
-									  <source id="ogg_src" src="video/tree2.mp4" type="video/ogg">
+									  <source id="mp4_src" src="video/01.mp4" type="video/mp4">
 									  Your browser does not support HTML5 video.
 									</video>
 									<p id="myVideoComment"></p>
@@ -656,10 +655,12 @@
 			document.getElementById("myVideoComment").innerHTML = "The minute in " + x.options[i].text + " with biggesr number of bullet screen comments.";
 			// isSupp = vid.canPlayType("video/mp4");
 		  if (i == 0) {
-		    vid.src = "video/tree1.mp4";
-		  } else {
-		    vid.src = "video/tree2.mp4";
-		  }
+		    vid.src = "video/01.mp4";
+		  } else if (i == 2) {
+		    vid.src = "video/02.mp4";
+		  } else if (i == 3) {
+				vid.src = "video/03.mp4";
+			}
 		  vid.load();
 		}
 		//   var x = document.getElementById("bullet-select");
