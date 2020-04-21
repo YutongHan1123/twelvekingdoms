@@ -1,8 +1,11 @@
+svg {
+  margin: 0 auto;
+  display: flex;
+}
 div.tooltip {
         position: absolute;
         text-align: left;
-        width: 160px;
-        height: 80px;
+        width: 350px;
         font: 15px sans-serif;
         border: 1px solid #ccc;
         padding: 10px;
@@ -30,11 +33,12 @@ div.tooltip {
             shape-rendering: crispEdges;
         }
         .axis text {
-          fill: #ccc;
+          fill: black;
           font-size: 18px;
+          opacity: 0.8;
         }
 
-        .bullet-select {
+        #bullet-select {
           display: block;
           color: white;
           cursor: pointer;
@@ -51,3 +55,17 @@ div.tooltip {
           -moz-appearance: none;
           appearance: none; */
         }
+#myVideo {
+  width: 60%;
+  margin: 2.5% auto;
+  display: flex;
+}
+#myVideoComment {
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+div.tooltip IMG {
+  width: 200px;
+  height: 200px;
+}

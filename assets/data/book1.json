@@ -1,20 +1,20 @@
 {"nodes":[
-  {"character":"Youko","id":0,"influence":1065,"zone":0},
-  {"character":"sword","id":1,"influence":297,"zone":1},
-  {"character":"Rakushun","id":2,"influence":306,"zone":6},
-  {"character":"youma","id":3,"influence":142,"zone":2},
-  {"character":"Keiki","id":4,"influence":181,"zone":6},
-  {"character":"Jouyuu","id":5,"influence":52,"zone":6},
-  {"character":"Imperial En","id":6,"influence":92,"zone":6},
-  {"character":"Kaikyaku","id":7,"influence":114,"zone":4},
-  {"character":"Takki","id":8,"influence":94,"zone":5},
-  {"character":"Monkey","id":9,"influence":93,"zone":5},
-  {"character":"Kochou","id":10,"influence":40,"zone":5},
-  {"character":"Kyokai","id":11,"influence":37,"zone":4},
-  {"character":"Taika","id":12,"influence":40,"zone":4},
-  {"character":"Shoku","id":13,"influence":30,"zone":4},
-  {"character":"Enki","id":14,"influence":43,"zone":6},
-  {"character":"kirin","id":15,"influence":132,"zone":4}
+  {"category":"1","character":"Youko","id":0,"influence":1065,"zone":0,"race":"Human","intro":"Youko used to be a sixteen year old honour student in Japan who lives an ordinary life. One day, the school is attacked by a giant bird, and a man named Keiki gave her a sword and transports her across the Kyokai to the Twelve Kingdoms, where she ends up in the Kingdom of Kou.","img":"assets/data/book/book1/youko.png"},
+  {"category":"2","character":"sword","id":1,"influence":297,"zone":3,"intro":"Suiguutou (水禺刀 Water Monkey Sword; Sword of Suiguu) is a sword that can be wielded only by the rightful ruler of Kei."},
+  {"category":"1","character":"Rakushun","id":2,"influence":306,"zone":1,"race":"Hanjyuu","intro":"He is a citizen of the Kingdom of Kou. His formal name is Chou Sei (張清). Youko's close friend.","img":"book/book1/youko.png"},
+  {"category":"3","character":"youma","id":3,"influence":142,"zone":2,"intro":"Youma (妖魔, demon beasts) are creatures with supernatural powers, generally evil unless in the service of a kirin."},
+  {"category":"1","character":"Keiki","id":4,"influence":181,"zone":1,"race":"Kirin","intro":"Keiki (景麒) is the kirin of Country Kei, Youko's assister.","img":"book/book1/youko.png"},
+  {"category":"1","character":"Jouyuu","id":5,"influence":52,"zone":1,"race":"Youma","intro":"Jouyuu (冗祐) is one of Keiki's shirei. At the beginning of the series, Keiki orders Jouyuu to 'attach' to Youko to enable her to fight.","img":"book/book1/youko.png"},
+  {"category":"1","character":"Imperial En","id":6,"influence":92,"zone":1,"race":"Human","intro":"The king of En, he has ruled En for approximately five hundred years and is considered a genius of administration.","img":"book/book1/youko.png"},
+  {"category":"3","character":"Kaikyaku","id":7,"influence":114,"zone":4,"intro":"Kaikyaku (海客, sea guests) are people from the sea who were caught in a shoku from Japan and swept into the world of the Twelve Kingdoms.","img":"book/book1/youko.png"},
+  {"category":"1","character":"Takki","id":8,"influence":94,"zone":2,"race":"Human","intro":"Takki (達姐) lives in Goso in the Kingdom of Kou. She cheated Youko, wanted to sell the her as a slave.","img":"book/book1/youko.png"},
+  {"category":"1","character":"Monkey","id":9,"influence":93,"zone":3,"race":"Spirit","intro":"Monkey is the physical manifestation of the sentient spirit of the scabbard of Youko's sword. The blue monkey taunts her with her doubts while the sword presents her with visions of things she does not wish to see when she was vulnerable.","img":"book/book1/youko.png"},
+  {"category":"1","character":"Kochou","id":10,"influence":40,"zone":2,"race":"Youma","intro":"Kochou (蟲雕) are youma that resemble a massive crow with horns that can burst windows and uproot concrete with just its wingbeats.","img":"book/book1/youko.png"},
+  {"category":"2","character":"Kyokai","id":11,"influence":37,"zone":4,"intro":"A large sea that surrounds the Twelve Kingdoms. It is impossible to sail across the Kyokai.","img":"book/book1/youko.png"},
+  {"category":"3","character":"Taika","id":12,"influence":40,"zone":4,"intro":"In the twelve kingdoms' world, all lifes come from the fruits of trees. A taika (胎果) is a the fruit who is blown into the real world, like Japan. The ranka will find itself inside the womb of a human woman and be born to human parents."},
+  {"category":"3","character":"Shoku","id":13,"influence":30,"zone":4,"intro":"Shoku (蝕) are magical storms that connects the Twelve Kingdoms to the lands of Hourai (Japan) and Kan (China)."},
+  {"category":"1","character":"Enki","id":14,"influence":43,"zone":1,"race":"Kirin","intro":"Enki (延麒) is the kirin of Country En, Imperial En's assister.","img":"book/book1/youko.png"},
+  {"category":"2","character":"kirin","id":15,"influence":132,"zone":4,"intro":"A kirin (麒麟) is noble and holy creature that is bound to and chooses the ruler of each kingdom according to the will of Tentei, the Emperor of Heaven.","img":"book/book1/youko.png"}
 ],
 "links":[
   {"source":0,"target":1,"weight":91},
@@ -37,5 +37,5 @@
   {"source":6,"target":12,"weight":4},
   {"source":0,"target":13,"weight":4},
   {"source":7,"target":13,"weight":5},
-  {"source":2,"target":15,"weight":1}
+  {"source":9,"target":1,"weight":12}
 ]}

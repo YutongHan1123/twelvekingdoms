@@ -18,7 +18,7 @@ d3.csv(fileName, function(error, data) {
 
 var makeVis = function(episodeMap) {
     // Define dimensions of vis
-    var margin = { top: 30, right: 50, bottom: 30, left: 50 },
+    var margin = { top: 50, right: 30, bottom: 30, left: 40 },
         width  = window.innerWidth*0.6 - margin.left - margin.right,
         height = window.innerHeight/2 - margin.top  - margin.bottom;
 
@@ -36,7 +36,7 @@ var makeVis = function(episodeMap) {
     // Create canvas
     var canvas = d3.select("#bullet")
       .append("svg")
-        .attr("width",  width  + margin.left + margin.right)
+        .attr("width",  width  + margin.left + margin.right*4)
         .attr("height", height + margin.top  + margin.bottom)
       .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -54,16 +54,51 @@ var makeVis = function(episodeMap) {
     var yAxis = d3.axisLeft()
         .scale(yScale);
 
+       // var yAxis = canvas.append("g")
+       //        .call(d3.axisLeft(yScale));
+
     var yAxisHandleForUpdate = canvas.append("g")
         .attr("class", "y axis")
         .call(yAxis);
 
-    yAxisHandleForUpdate.append("text")
-        .attr("transform", "rotate(-90)")
-        .attr("y", 6)
+    var leftyAxis = canvas.append("g")
+        .attr("class", "y axis");
+    leftyAxis.append("text")
+        .attr("x", 0)
+        .attr("y", 0-margin.top/2)
+        .attr("dy", ".71em")
+        .style("text-anchor", "start")
+        .text("The Number of Comments");
+
+    var leftAxis = canvas.append("g")
+        .attr("class", "y axis");
+
+    leftAxis.append("text")
+        .attr("x", 10)
+        .attr("y", height+9)
         .attr("dy", ".71em")
         .style("text-anchor", "end")
-        .text("Times");
+        .text("Start");
+
+    var rightAxis = canvas.append("g")
+        .attr("class", "y axis");
+
+    rightAxis.append("text")
+        .attr("x", width+margin.right*3.8)
+        .attr("y", height+9)
+        .attr("dy", ".71em")
+        .style("text-anchor", "end")
+        .text("End of Episode");
+
+    var rightAxis2 = canvas.append("g")
+        .attr("class", "y axis");
+
+    rightAxis2.append("text")
+        .attr("x", width)
+        .attr("y", height-margin.top)
+        .attr("dy", ".71em")
+        .style("text-anchor", "start")
+        .text("Minute");
 
     var updateBars = function(data) {
         // First update the y-axis domain to match data
@@ -104,7 +139,8 @@ var makeVis = function(episodeMap) {
 
     var dropdown = d3.select("#bullet")
         .insert("select", "svg")
-        .attr("class", "bullet-select")
+        .attr("id", "bullet-select")
+        .attr("onchange", "myFunction()")
         .on("change", dropdownChange);
 
     dropdown.selectAll("option")

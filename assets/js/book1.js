@@ -10,7 +10,7 @@ var margin = {
 	var colordata = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 	var colors = d3.scaleOrdinal()
                .domain(colordata)
-               .range(["#f3c623", "#d63447", "#84a9ac", "#844685", "#cfd186", "grey", "darkgreen", "pink", "brown", "slateblue", "grey1", "orange"]);
+               .range(["#f3c623", "#d63447", "#84a9ac", "#844685", "#cfd186"]);
 	var div = d3.select("#book1")
 						.append("div")
             .attr("class", "tooltip")
@@ -54,7 +54,7 @@ var margin = {
 							div.transition()
 						.duration(200)
 						.style("opacity", .9);
-				div.html("<p> Proximity: " + d.weight + "</p>")
+				div.html("<p> Proximity between " + d.source.character + " and " + d.target.character + ": " + d.weight + "</p>")
 						.style("left", (d3.event.pageX) + "px")
 						.style("top", (d3.event.pageY - 28) + "px");
 						})
@@ -73,21 +73,37 @@ var margin = {
             .append("circle")
             .attr("r", function(d){ return d.influence*0.1; })
             .attr('fill',function (d,i) {
-                return colors(i)
+                return colors(d.zone)
             })
 			      .on("mousemove", function(d) {
-							div.transition()
-            .duration(200)
-            .style("opacity", .9);
-        div.html("<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p>")
-            .style("left", (d3.event.pageX) + "px")
-            .style("top", (d3.event.pageY - 28) + "px");
-			      })
-			      .on("mouseout", function(d){
-							div.transition()
-	           .duration(500)
-	           .style("opacity", 0);
+							if(d.category == 1) {
+            div.transition()
+          .duration(200)
+          .style("opacity", .9);
+      div.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p> Race: " + d.race + "</p> <p>Intro: " + d.intro +"</p>")
+          .style("left", (d3.event.pageX) + "px")
+          .style("top", (d3.event.pageY - 28) + "px");
+        } else if (d.category == 2){
+          div.transition()
+        .duration(200)
+        .style("opacity", .9);
+    div.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
+        .style("left", (d3.event.pageX) + "px")
+        .style("top", (d3.event.pageY - 28) + "px");
+      } else if (d.category == 3){
+          div.transition()
+        .duration(200)
+        .style("opacity", .9);
+    div.html("<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
+        .style("left", (d3.event.pageX) + "px")
+        .style("top", (d3.event.pageY - 28) + "px");
+        }
 					 })
+					 .on("mouseout", function(d){
+             div.transition()
+            .duration(500)
+            .style("opacity", 0);
+          })
             .call(d3.drag()
                     .on("start", dragstarted)
                     .on("drag", dragged)
@@ -110,12 +126,28 @@ var margin = {
 														}
 													})
 				      .on("mousemove", function(d) {
-								div.transition()
-	            .duration(200)
-	            .style("opacity", .9);
-	        div.html("<p> Name: " + d.character + "</p>  <p> Frequency: " + d.influence + "</p>")
-	            .style("left", (d3.event.pageX) + "px")
-	            .style("top", (d3.event.pageY - 28) + "px");
+								if(d.category == 1) {
+							div.transition()
+						.duration(200)
+						.style("opacity", .9);
+				div.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p> Race: " + d.race + "</p> <p>Intro: " + d.intro +"</p>")
+						.style("left", (d3.event.pageX) + "px")
+						.style("top", (d3.event.pageY - 28) + "px");
+					} else if (d.category == 2){
+						div.transition()
+					.duration(200)
+					.style("opacity", .9);
+			div.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
+					.style("left", (d3.event.pageX) + "px")
+					.style("top", (d3.event.pageY - 28) + "px");
+				} else if (d.category == 3){
+						div.transition()
+					.duration(200)
+					.style("opacity", .9);
+			div.html("<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
+					.style("left", (d3.event.pageX) + "px")
+					.style("top", (d3.event.pageY - 28) + "px");
+					}
 				      })
 				      .on("mouseout", function(d){
 								div.transition()
@@ -139,12 +171,28 @@ var margin = {
 														}
 													})
 				      .on("mousemove", function(d) {
-								div.transition()
-	            .duration(200)
-	            .style("opacity", .9);
-	        div.html("<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p>")
-	            .style("left", (d3.event.pageX) + "px")
-	            .style("top", (d3.event.pageY - 28) + "px");
+								if(d.category == 1) {
+	            div.transition()
+	          .duration(200)
+	          .style("opacity", .9);
+	      div.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p> Race: " + d.race + "</p> <p>Intro: " + d.intro +"</p>")
+	          .style("left", (d3.event.pageX) + "px")
+	          .style("top", (d3.event.pageY - 28) + "px");
+	        } else if (d.category == 2){
+	          div.transition()
+	        .duration(200)
+	        .style("opacity", .9);
+	    div.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
+	        .style("left", (d3.event.pageX) + "px")
+	        .style("top", (d3.event.pageY - 28) + "px");
+	      } else if (d.category == 3){
+	          div.transition()
+	        .duration(200)
+	        .style("opacity", .9);
+	    div.html("<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
+	        .style("left", (d3.event.pageX) + "px")
+	        .style("top", (d3.event.pageY - 28) + "px");
+	        }
 				      })
 				      .on("mouseout", function(d){
 								div.transition()
