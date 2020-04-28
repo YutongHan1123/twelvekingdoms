@@ -58,8 +58,20 @@
   color: #cfd186;
   margin-bottom: 0;
 }
+.setting_text1 {
+  background-color: #f3c623;
+  color: white;
+}
+.setting_text2 {
+  background-color: #d63447;
+  color: white;
+}
 .setting_text3 {
   background-color: #84a9ac;
+  color: white;
+}
+.setting_text4 {
+  background-color: #844685;
   color: white;
 }
 .setting_text5 {
@@ -72,7 +84,7 @@
 }
 @media screen and (min-width: 610px) {
   .image.featured {
-    width: 600px;
+    width: 500px;
     display: block;
     margin: 0 auto;
   }
@@ -91,4 +103,9 @@
   height: 75px;
   margin-top: -75px;
   visibility: hidden;
+}
+
+.main_character {
+  text-align: center;
+  color: #f3c623;
 }

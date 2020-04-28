@@ -14,13 +14,13 @@
   {"category":"1","character":"Kantai","id":12,"influence":141,"zone":1,"intro":"In the twelve kingdoms' world, all lifes come from the fruits of trees. A taika (胎果) is a the fruit who is blown into the real world, like Japan. The ranka will find itself inside the womb of a human woman and be born to human parents."},
   {"category":"1","character":"Rakushun","id":13,"influence":98,"zone":1,"intro":"Shoku (蝕) are magical storms that connects the Twelve Kingdoms to the lands of Hourai (Japan) and Kan (China)."},
   {"category":"1","character":"Gekkei","id":14,"influence":51,"zone":1,"race":"Kirin","intro":"Enki (延麒) is the kirin of Country En, Imperial En's assister.","img":"book/book2/youko.png"},
-  {"category":"1","character":"Gobo","id":15,"influence":60,"zone":1,"intro":"A kirin (麒麟) is noble and holy creature that is bound to and chooses the ruler of each kingdom according to the will of Tentei, the Emperor of Heaven.","img":"book/book2/youko.png"},
+  {"category":"1","character":"Gobo","id":15,"influence":60,"zone":3,"intro":"A kirin (麒麟) is noble and holy creature that is bound to and chooses the ruler of each kingdom according to the will of Tentei, the Emperor of Heaven.","img":"book/book2/youko.png"},
   {"category":"3","character":"Princess","id":16,"influence":85,"zone":4,"intro":"","img":"book/book2/youko.png"},
   {"category":"1","character":"Imperial Kei","id":17,"influence":120,"zone":4,"intro":"","img":"book/book2/youko.png"},
   {"category":"3","character":"girl","id":18,"influence":176,"zone":4,"intro":"","img":"book/book2/youko.png"},
   {"category":"3","character":"Gyouton","id":19,"influence":62,"zone":4,"intro":"","img":"book/book2/youko.png"},
-  {"category":"1","character":"Riyou","id":20,"influence":155,"zone":1,"intro":"","img":"book/book2/youko.png"},
-  {"category":"1","character":"Seishou","id":21,"influence":132,"zone":1,"intro":"","img":"book/book2/youko.png"},
+  {"category":"1","character":"Riyou","id":20,"influence":155,"zone":3,"intro":"","img":"book/book2/youko.png"},
+  {"category":"1","character":"Seishu","id":21,"influence":132,"zone":1,"intro":"","img":"book/book2/youko.png"},
   {"category":"1","character":"Sekki","id":22,"influence":137,"zone":1,"intro":"","img":"book/book2/youko.png"}
 ],
 "links":[

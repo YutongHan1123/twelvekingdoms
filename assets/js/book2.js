@@ -11,7 +11,7 @@ var height02;
 
 if(window.innerWidth > 840) {
   width02 = window.innerWidth*0.5 - margin02.left - margin02.right;
-  height02 = window.innerWidth*0.5 - margin02.top - margin02.bottom;
+  height02 = window.innerWidth*0.45 - margin02.top - margin02.bottom;
 } else if(window.innerWidth <= 840) {
   width02 = window.innerWidth - margin02.left - margin02.right;
   height02 = window.innerWidth*0.8 - margin02.top - margin02.bottom;
