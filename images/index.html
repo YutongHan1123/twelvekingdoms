@@ -1,0 +1,742 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Love for The Twelve Kingdoms</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/styles.css" />
+		<link rel="stylesheet" href="assets/css/chart.css" />
+		<link rel="stylesheet" href="assets/css/detail.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript" src="https://d3js.org/d3.v4.js"></script>
+	</head>
+	<body class="index is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1 id="logo"><a href="index.html">Eastern Fantasy World <span>by Yutong Han</span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="submenu"><a>About Book</a>
+								<ul>
+									<li><a href="#book1-title" class="scrolly">Shadow of the Moon</a></li>
+									<li><a href="#book2-title" class="scrolly">A Thousand Leagues of Wind</a></li>
+									<li><a href="#book3-title" class="scrolly">The Shore in Twilight</a></li>
+									<li><a href="#book4-title" class="scrolly">The Wings of Dreams</a></li>
+									<li><a href="#book5-title" class="scrolly">Poseidon of the East</a></li>
+									<li><a href="#book6-title" class="scrolly">Dreaming of Paradise</a></li>
+									<li><a href="#book7-title" class="scrolly">Hisho's Birds</a></li>
+									<li><a href="#book1to7-title" class="scrolly">About All books</a></li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="#">Comment</a>
+								<ul>
+									<li><a href="#bullet-screen-comments" class="scrolly">Bullet Screen Comments</a></li>
+									<li><a href="#bottom-comments" class="scrolly">Bottom Comments</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+
+					<div class="inner" style="margin-top:40%;">
+
+						<header>
+							<h2>Eastern Fantasy World</h2>
+						</header>
+						<p>The Twelve Kingdoms is a series of eastern fantasy novels written by Fuyumi Ono.
+						<br />
+						As one of its loyal audiences, I want to introduce it to more people.
+						<br />
+						I’d like to invite you to enjoy the unique world of the Twelve Kingdoms through data visualization.</p>
+
+					</div>
+
+				</section>
+
+			<!-- Main -->
+				<article id="main">
+					<header class="container">
+						<div class="narrow-width">
+						<p>We are familiar with the western fantasy world, like Harry Potter, Game of Thrones. But do you know the eastern fantasy world? Maybe you are an anime fan and you are familiar with One Piece, Naruto. However, I guess you never watch, even didn’t hear this anime-the Twelve Kingdoms.</p>
+						<p>The work, the Twelve Kingdoms, originally is a series of fantasy novels written by Fuyumi Ono, then made into an anime in 2002.</p>
+						<p>The world of the Twelve Kingdoms is based on the coexistence of youma (monster), and sages. The political institution is similar to ancient China, especially Zhou dynasty.</p>
+						<p>There are twelve kingdoms, twelve kings and twelve kirins. Kirin possess the form of creature resembling a hybrid between a horse and a deer with a single horn from its forehead, somewhat like a unicorn. Kirin can shift into human form. Each kingdom has its own kirin.</p>
+						<a class="image featured"><img src="images/kirin.png" alt="" /></a>
+						<p class="image_text" style="text-align: center;">Kirin</p>
+
+						<p>The king is selected by the kirin, rather than by blood or familial relationships, according to the will of Tentei, the Emperor of Heaven.
+						</p>
+						<p>In the world of The Twelve Kingdoms, the king has to follow three rules, or the king will die. First one is working hard to run the country. If the king does great job, he will be undead and ageless, like vampires. If the king becomes brutal, unmerciful, loses the way and fails to govern properly, the kirin will be sick, which is called Shitsudou. If the king keeps wrongheaded, the sickness of kirin gets worse with time and causes the kirin to die. If the kirin dies, the king will lose the mandate of heaven and eventually die within a year of the kirin's death. Typically, a king with a long and stable reign will have a prosperous and thriving kingdom, while short-lived monarchs tend to leave their kingdoms in a state of turmoil that wild youma appears, and weather becomes harsh.
+						</p>
+						<a class="image featured"><img src="images/sick_kirin.png" alt="" /></a>
+						<p class="image_text" style="text-align: center;">Sicked Kirin</p>
+
+						<p>The second rule is that the king can’t escape his responsibility to be the king. If the king decides to reject the will of Tentei, he will quickly die.
+						</p>
+						<p>The third rule is that the king from one country can’t interfere, or send an army into battle to other countries without consent. If the king intervenes or dispatches, the king and the kirin will quickly die (触犯侵略之罪<觌面之罪>).</p>
+						<p>In the Twelve Kingdoms, eight of the Twelve Kingdoms border at least one of these four seas, extending from the center like the petals of a flower. The kingdoms are surrounded by an endless sea called the Kyokai (虚海, Void Sea). At the center of the world are Five Sacred Mountains surround the Yellow Sea (the Kokai), a barren wasteland of rock, desert, swamp, and thorns where youma inhabit. The Five Sacred Mountains, which includes Mount Hou, is the mythic birthplace of kirin where all the kings of the Twelve Kingdoms must ascend in order to accept the mandate of heaven before they can claim their throne.</p>
+						<p>Before we begin the story of the Twelve Kingdoms, there is one last thing you need to know, Shoku. Shoku(蝕) are magical storms that connects the Twelve Kingdoms’ world to the lands of Hourai (Japan) and Kan (China). People might be transformed between these two worlds during Shoku. The storms naturally occur, but are extremely damaging to the world it impacts. Unless absolutely compelled, kirin and highly ranked sages shall not cross between the worlds in this way.</p>
+						<p>Above are basic settings for the world of the Twelve Kingdoms. As one of Fuyumi's big fans, I’d like to invite you to enjoy the unique world through data visualization.</p>
+						</div>
+					</header>
+
+					<header class="special container" id="book1-title">
+						<span class="icon solid fa-book-reader"></span>
+						<h2>Shadow of the Moon, a Shadow of Shadows</h2>
+						<div class="narrow-width">
+						<p>Youko, who used to be a normal high-schooler in Japan, is suddenly attacked by a sea of youma and whisked her away to an unearthly realm. Youko is left with only a sword. This young girl had to quickly grow up to confront ample challenges. During the adventure, she gradually found she is not a normal person anymore.
+						</p>
+						<br>
+						<a class="image featured"><img src="images/youma.png" alt="" /></a>
+						<p class="image_text" style="text-align: center;">Youma</p>
+					</div>
+					</header>
+
+					<!-- One -->
+					<section class="wrapper style4 container">
+
+						<div class="row gtr-150">
+							<div class="col-8 col-12-narrower">
+
+								<!-- Content -->
+									<div class="content">
+										<section>
+											<section id="book1"></section>
+											<p>There can be no doubt that the bubble of <strong>Youko</strong> is the biggest. She is the main character and this novel is talking about her adventure in the unknown world. Youko is regarded as a <a href="#Kaikyaku" class="setting_text5 scrolly">Kaikyaku</a> after she went to the world of the Twelve Kingdoms. She was both hunted by the <a href="#Youma" class="setting_text3 scrolly">youma</a> and the people in country Kou, because the <a href="#KingKou" class="setting_text3 scrolly">king of Kou</a> dislike Kaikyaku and Hanjyuu (a half-beast that has both a human and an animal form).</p>
+
+											<p>And the second large bubble is <strong>Rakushun</strong>, Youko’s close friend. When Youko’s strength gave out and fell into a coma, Rakushun took her home, rather than reported her to the local ruler. Though Youko was initially distrustful of him, he patiently took care of Youko. He is very intelligent and knowledgeable, teaching Youko essential skills on how to live in the world. Youko went to the country En, where is peaceful and prosperous, to find a way back to Japan, accompanied by Rakushun. During the travel, they became close friends. In the chart, the line between them is also the thickest. The number is 117 that they appeared together in the novel.</p>
+											<a class="image featured"><img src="images/care.png" alt="" /></a>
+											<p class="image_text" style="text-align: center;">Rakushun took care of Youko.</p>
+
+											<p>The third biggest bubble is the <strong>sword</strong>, Suiguutou. It’s a sword that can be wielded only by the rightful king of Kei. Its most dangerous ability is the power to present visions of past and future, and of places far-away to bewitch the wielder. Sword and scabbard sealed each other, so that the scabbard controlled the sword's visions and prevented people from drawing the sword, while the sword prevented the monkey spirit from getting loose. Youko loses the scabbard, and thus gets taunted by both visions and the monkey until she kills the monkey and picks up the dead scabbard.</p>
+										</section>
+									</div>
+
+							</div>
+							<div class="col-4 col-12-narrower">
+
+								<!-- Sidebar -->
+									<div class="sidebar">
+										<section>
+											<header>
+												<h3>Color of the Bubbles</h3>
+											</header>
+											<p class="dot1_text"><span class="dot1"></span>Main Characters</p>
+											<p class="dot2_text"><span class="dot2"></span>Good Characters</p>
+											<p class="dot3_text"><span class="dot3"></span>Evil Characters</p>
+											<p class="dot4_text"><span class="dot4"></span>Both Good and Evil Characters</p>
+											<p class="dot5_text"><span class="dot5"></span>Not Live Animals</p>
+											<br>
+											<p>The bubble represents how many times this word appears in the novel.</p>
+											<p>The thickness of the line represents the times these two words appear together.</p>
+											<p>If you hover on them, detailed information will appear in the tooltip.</p>
+										</section>
+
+										<section>
+											<header>
+												<h3>Special setting</h3>
+											</header>
+											<p><strong id="Kaikyaku" class="dot5_text anchor">Kaikyaku</strong>: people from the sea who were caught in a Shoku from Japan and swept into the world of the Twelve Kingdoms. They are unable to speak or understand the native language and may be subject to persecution, particularly as a result of Shoku. But some Kaikyakus also bring rare things to the world, like paper, ceramics, print technology, medicine, and Buddhism.</p>
+											<p><strong id="Youma" class="dot3_text anchor">Youma</strong>: creatures with supernatural powers, generally evil unless in the service of a kirin. They tend to appear in greater numbers when a kingdom lacks the king.</p>
+											<p><strong id="KingKou" class="dot3_text anchor">King of Kou</strong>: the king made various efforts to capture and .kill Youko, because he was afraid of Youko’s ascension to the throne of Kei, believing that she will bring the country the same prosperity as En and Kou, whose kings have ruled over 500 years. In that case, Kou will be poorest country.  </p>
+
+											<footer>
+												<ul class="buttons">
+													<li><a href="http://www.eugenewoodbury.com/shadow/index.html" class="button small">Read the Book</a></li>
+												</ul>
+											</footer>
+										</section>
+									</div>
+
+							</div>
+						</div>
+					</section>
+
+<!-- Two -->
+					<header class="special container" id="book2-title">
+						<span class="icon solid fa-book"></span>
+						<h2>A Thousand Leagues of Wind, the Sky at Dawn</h2>
+						<div class="narrow-width">
+						<p>The book focuses on three girls: Youko, Suzu, and Shoukei, talking about the growth of these three girls and how they become great friends.</p>
+						<p>As the new king of Kei, Youko is surrounded by advisors who bicker among themselves and offer contradictory advice. Desperate to learn enough about her kingdom to rule wisely, Youko is sent by Keiki to study with a wise teacher named Enho. When Enho is abducted, Youko seeks to solve Enho, only to discover that the corruption in her kingdom runs much deeper than she ever imagined.</p>
+						<p>Suzu Oki, a Kaikyaku, used to serve the cruel mistress Lady Riyo, want to meet Youko because they are both Kaikyakus. So she went to Kei to meet Youko.</p>
+						<p>Shoukei became a poor, heavy manual worker after the death of her father, the king of Hou. She wanted to go back princess' life. When she heard Youko is a new, young empress, she thought it's a great chance. In this case, she went to Kei to meet Youko.</p>
+						<br>
+						<a class="image featured"><img src="images/qiong.png" alt="" /></a>
+						<p class="image_text" style="text-align: center;">Shoukei</p>
+
+						<p>Even if they went to the province of Ei in Kei for different reasons, all of them fought for the same thing in the end.</p>
+					</div>
+					</header>
+
+<section class="wrapper style4 container">
+
+							<div class="row gtr-150">
+								<div class="col-4 col-12-narrower">
+
+									<!-- Sidebar -->
+										<div class="sidebar">
+											<section>
+												<header>
+													<h3>Color of the Bubbles</h3>
+												</header>
+												<p class="dot1_text"><span class="dot1"></span>Main Characters</p>
+												<p class="dot2_text"><span class="dot2"></span>Good Characters</p>
+												<p class="dot3_text"><span class="dot3"></span>Evil Characters</p>
+												<p class="dot4_text"><span class="dot4"></span>Both Good and Evil Characters</p>
+												<p class="dot5_text"><span class="dot5"></span>Not Live Animals</p>
+												<br>
+												<p>The bubble represents how many times this word appears in the novel.</p>
+												<p>The thickness of the line represents the times these two words appear together.</p>
+												<p>If you hover on them, detailed information will appear in the tooltip.</p>
+											</section>
+
+											<section>
+												<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+												<header>
+													<h3>Background info</h3>
+												</header>
+												<p><strong id="Riyou" class="dot4_text anchor">Riyou</strong>: a flying sage, she has been granted immortality, but does not participate in government affairs. Instead, she lives in the mountains and employs many servants. During the hundred years that Suzu serves her, Riyou is particularly abusive towards Suzu.</p>
+												<p><strong id="Shoukou" class="dot3_text anchor">Shoukou</strong>: the governor of the Shisui Prefecture in the Wa Province of Kei. His corruption is too great and the taxes he demands is 70%. He is called as “the wolf without a tail”. Luckily, some people, like Suzu, Koshou, came together to rebel against Shoukou. Youko also joined with the rebels when she discovers that Shoukou is responsible for abducting her mentor Enho.</p>
+												<p><strong id="KingKou" class="dot2_text anchor">Koshou</strong>: the charismatic leader of the Shisui rebels. A man with a strong sense of justice, he wants to make Wa Province a better place to live for the sake of his brother and all the people who are suffering under the corruption of Shoukou.</p>
+
+												<p><strong id="Shitsudou" class="dot5_text anchor">Shitsudou</strong>: the situation when the king loses the way and fails to govern properly, at the same time kirin will be sick. If the king can’t realize his errors and mend his ways, kirin will get worse, even die. If the kirin dies, the king will die in one year after the kirin’s death.</p>
+												<p><strong id="Gekkei" class="dot2_text anchor">Gekkei</strong>: the governor of Kei Province in Hou. He leads the rebellion against the king of Hou, becuase want to save people from the tyranny. After the rebellion, Gekkei refuses to lead the government as a temporary king. He retreats to the Kei Province to continue his duties as his governor.</p>
+												<p><strong id="Rakushun" class="dot2_text anchor">Rakushun</strong>: Youko’s close friend. He is not only intelligent and knowledgeable, but also ingenuous and sweet.</p>
+												<p><strong id="Kantai" class="dot2_text anchor">Kantai</strong>: the general of the province of Baku. He is a hanjyuu that can take the form of a large bear, and he is incredibly strong, even in human form. He saves Shoukei after she threw a rock at Gahou's executioners.</p>
+
+												<footer>
+													<ul class="buttons">
+														<li><a href="http://www.eugenewoodbury.com/wind/index.html" class="button small">Read the Book</a></li>
+													</ul>
+												</footer>
+											</section>
+										</div>
+
+								</div>
+								<div class="col-8 col-12-narrower imp-narrower">
+
+									<!-- Content -->
+										<div class="content">
+											<section>
+												<section id="book2"></section>
+												<p>Unlike the first novel, this one has three main characters. We can see the bubble of <a href="#Suzu" class="setting_text1 scrolly">Suzu</a> is the biggest, 634. The second bubble represents <a href="#Shoukei" class="setting_text1 scrolly">Shoukei</a>, 553. The third biggest one is Youko, 464. Suzu and Shoukei wanted to see the king of Kei because they are similar-age gils, so we can see their bubbles are linked by "Imperial Kei" and "girl". </p>
+
+												<header class="main_character">
+													<h3 id="Suzu">Suzu</h3>
+												</header>
+												<p>At the beginning of the story, Suzu thought she was the most miserable person in the world, because she can’t talk with other people as a Kaikyaku, then was forced to endure a great deal of abuse from her lord, <a href="#Riyou" class="setting_text4 scrolly">Riyou</a>. From the chart, the number is 42 when Suzu and Riyou appeared together. She believed Youko can let her happy because Youko is Kaikyaku, too, and Youko is the powerful empress of country Kei. In this case, she left to see Youko.</p>
+
+												<p>She was changed by a young boy called Seishu on the way. Seishu lost his parents by youma’s attacks. He was also heavily injured by the attack. The injury gradually grows worse and is the source of seizures and his failing eyesight. Even his situation was so terrible, he always faced life with a smile. He pointed out <strong>Suzu made no actual effort to try to change those circumstances and only moped about how unfortunate she was</strong>. Suzu gradually recognized her mistake and they became friends.</p>
+												<a class="image featured"><img src="images/seishu.png" alt="" /></a>
+												<p class="image_text" style="text-align: center;">Seishu and Suzu</p>
+
+												<p>However, Seishuu is deliberately run over by the carriage of the prefecture's praetor, <a href="#Shoukou" class="setting_text3 scrolly">Shoukou</a>, for collapsing in the carriage's path. Suzu swore to avenge Seishuu by killing Shoukou and the king of Kei for her inaction. She was quickly recruited by the leader of the Shisui rebels, <a href="#Koshou" class="setting_text2 scrolly">Koshou</a>. From the chart, the number is 54 when Suzu and Koshou appeared together. They fought together to overthrow the rule of Shoukou.</p>
+
+<!-- shoukei -->
+												<header class="main_character">
+													<h3 id="Shoukei">Shoukei</h3>
+												</header>
+												<p>Shoukei used to be the princess of the Kingdom of Hou. Her father was killed due to <a href="#Shitsudou" class="setting_text5 scrolly">Shitsudou</a>. And she quickly became a poor, heavy manual worker, hated by Hou’s people. In the beginning, she deeply hated <a href="#Gekkei" class="setting_text2 scrolly">Gekkei</a>, because Gekkei killed her parents. She thought Gekkei stole the throne, robbed her jewelry, beautiful clothes. She heard the new king of Kei is a girl of similar age with her. She was very jealous. She wanted to take advantage of Youko. In this case, she stole some jewelry to make her way to Kei.</p>
+
+												<p>Shoukei met Rakushun on the way. She felt mortifying and irritating when she found <a href="#Rakushun" class="setting_text2 scrolly">Rakushun</a> knows more about Hou than her. Her father executed nearly 300,000 citizens in Hou for petty crimes and trivial problems in the final year of his reign. And she didn’t know about that. She recognized she just enjoyed the life of the princess, but not took the responsibility as a princess. It’s more shame than wearing in rags.</p>
+												<a class="image featured"><img src="images/sho.png" alt="" /></a>
+												<p class="image_text" style="text-align: center;">Shoukei feels shame.</p>
+
+												<p>After arriving Kei, Shoukei witnessed a man condemned to be crucified in the Wa Province. Reminded of her father's own brutality, she throws a rock at the executioners to stop them from killing the poor man. Then she was chased by guards until she was saved by <a href="#Kantai" class="setting_text2 scrolly">Kantai</a>. After that, Shoukei joined rebels revolting against Shoukou, the corrupt governor of Wa.</p>
+											</section>
+										</div>
+
+								</div>
+							</div>
+						</section>
+
+					<!-- Three -->
+					<header class="special container" id="book3-title">
+						<span class="icon solid fa-book"></span>
+						<h2>The Shore in Twilight, The Sky at Daybreak</h2>
+						<div class="narrow-width">
+						<p>We are familiar with western fantasy world, like Harry Potter, Game of Thrones. But do you know eastern fantasy world? Maybe you are a Japanese anime and you are familiar with One piece, Naruto. However, I guess you never watch, even didn’t heard this anime-the Twelve Kingdoms.</p>
+						<p>The work, the Twelve Kingdoms, originally is a series of fantasy novels wrote by Fuyumi Ono, then made into an anime in 2002. The author Fuyumi Ono created this fantasy world inspired by Chinese mythology, like Classic of Mountains and Seas, and ancient eastern organizational books, like Rites of Zhou. In addition, female characters under Fuyumi’s writing has enormous charm, who inspired me to firstly think about what kind of adult I want to be in the future.</p>
+						<p>As one of its’ big fans, I’d like to invite you to enjoy the unique world of the Twelve Kingdoms through data visualization.</p>
+					</div>
+					</header>
+
+					<section class="wrapper style4 container">
+
+						<div class="row gtr-150">
+							<div class="col-8 col-12-narrower">
+
+								<!-- Content -->
+									<div class="content">
+										<section>
+											<section id="book3"></section>
+											<header>
+												<h3>Dolore Amet Consequat</h3>
+											</header>
+											<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum massa. Morbi eu faucibus massa. Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam.</p>
+											<p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc urna. Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique. Sed id sem et massa ornare pellentesque. Maecenas pharetra porta accumsan. </p>
+											<p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus, non hendrerit ipsum arcu tristique est.</p>
+										</section>
+									</div>
+
+							</div>
+							<div class="col-4 col-12-narrower">
+
+								<!-- Sidebar -->
+									<div class="sidebar">
+										<section>
+											<header>
+												<h3>Color of the Bubbles</h3>
+											</header>
+											<p class="dot1_text"><span class="dot1"></span>Main Characters</p>
+											<p class="dot2_text"><span class="dot2"></span>Good Characters</p>
+											<p class="dot3_text"><span class="dot3"></span>Evil Characters</p>
+											<p class="dot4_text"><span class="dot4"></span>Both Good and Evil Characters</p>
+											<p class="dot5_text"><span class="dot5"></span>Not Live Animals</p>
+											<br>
+											<p>The bubble represents how many times this word appears in the novel.</p>
+											<p>The thickness of the line represents the times these two words appear together.</p>
+											<p>If you hover on them, detailed information will appear in the tooltip.</p>
+										</section>
+
+										<section>
+											<!-- <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a> -->
+											<header>
+												<h3>Amet Lorem Tempus</h3>
+											</header>
+											<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+
+											<footer>
+												<ul class="buttons">
+													<li><a href="http://www.eugenewoodbury.com/twilight/index.html" class="button small">Read the Book</a></li>
+												</ul>
+											</footer>
+										</section>
+									</div>
+
+							</div>
+						</div>
+					</section>
+
+<!-- Four -->
+<header class="special container" id="book4-title">
+	<span class="icon solid fa-book"></span>
+	<h2>The Wings of Dreams</h2>
+	<div class="narrow-width">
+	<p>We are familiar with western fantasy world, like Harry Potter, Game of Thrones. But do you know eastern fantasy world? Maybe you are a Japanese anime and you are familiar with One piece, Naruto. However, I guess you never watch, even didn’t heard this anime-the Twelve Kingdoms.</p>
+	<p>The work, the Twelve Kingdoms, originally is a series of fantasy novels wrote by Fuyumi Ono, then made into an anime in 2002. The author Fuyumi Ono created this fantasy world inspired by Chinese mythology, like Classic of Mountains and Seas, and ancient eastern organizational books, like Rites of Zhou. In addition, female characters under Fuyumi’s writing has enormous charm, who inspired me to firstly think about what kind of adult I want to be in the future.</p>
+	<p>As one of its’ big fans, I’d like to invite you to enjoy the unique world of the Twelve Kingdoms through data visualization.</p>
+</div>
+</header>
+
+<section class="wrapper style4 container">
+
+		<div class="row gtr-150">
+			<div class="col-4 col-12-narrower">
+
+				<!-- Sidebar -->
+					<div class="sidebar">
+						<section>
+							<header>
+								<h3>Color of the Bubbles</h3>
+							</header>
+							<p class="dot1_text"><span class="dot1"></span>Main Characters</p>
+							<p class="dot2_text"><span class="dot2"></span>Good Characters</p>
+							<p class="dot3_text"><span class="dot3"></span>Evil Characters</p>
+							<p class="dot4_text"><span class="dot4"></span>Both Good and Evil Characters</p>
+							<p class="dot5_text"><span class="dot5"></span>Not Live Animals</p>
+							<br>
+							<p>The bubble represents how many times this word appears in the novel.</p>
+							<p>The thickness of the line represents the times these two words appear together.</p>
+							<p>If you hover on them, detailed information will appear in the tooltip.</p>
+						</section>
+
+						<section>
+							<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+							<header>
+								<h3>Amet Lorem Tempus</h3>
+							</header>
+							<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+
+							<footer>
+								<ul class="buttons">
+									<li><a href="http://www.eugenewoodbury.com/tonan/index.html" class="button small">Read the Book</a></li>
+								</ul>
+							</footer>
+						</section>
+					</div>
+
+			</div>
+			<div class="col-8 col-12-narrower imp-narrower">
+
+				<!-- Content -->
+					<div class="content">
+						<section>
+							<section id="book4"></section>
+							<header>
+								<h3>Dolore Amet Consequat</h3>
+							</header>
+							<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum massa. Morbi eu faucibus massa. Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam.</p>
+							<p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc urna. Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique. Sed id sem et massa ornare pellentesque. Maecenas pharetra porta accumsan. </p>
+							<p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus, non hendrerit ipsum arcu tristique est.</p>
+						</section>
+					</div>
+
+			</div>
+		</div>
+	</section>
+
+<!-- Five -->
+<header class="special container" id="book5-title">
+	<span class="icon solid fa-book"></span>
+	<h2>Poseidon of the East, Vast Blue Seas of the West</h2>
+	<div class="narrow-width">
+	<p>We are familiar with western fantasy world, like Harry Potter, Game of Thrones. But do you know eastern fantasy world? Maybe you are a Japanese anime and you are familiar with One piece, Naruto. However, I guess you never watch, even didn’t heard this anime-the Twelve Kingdoms.</p>
+	<p>The work, the Twelve Kingdoms, originally is a series of fantasy novels wrote by Fuyumi Ono, then made into an anime in 2002. The author Fuyumi Ono created this fantasy world inspired by Chinese mythology, like Classic of Mountains and Seas, and ancient eastern organizational books, like Rites of Zhou. In addition, female characters under Fuyumi’s writing has enormous charm, who inspired me to firstly think about what kind of adult I want to be in the future.</p>
+	<p>As one of its’ big fans, I’d like to invite you to enjoy the unique world of the Twelve Kingdoms through data visualization.</p>
+</div>
+</header>
+
+<section class="wrapper style4 container">
+
+	<div class="row gtr-150">
+		<div class="col-8 col-12-narrower">
+
+			<!-- Content -->
+				<div class="content">
+					<section>
+						<section id="book5"></section>
+						<header>
+							<h3>Dolore Amet Consequat</h3>
+						</header>
+						<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum massa. Morbi eu faucibus massa. Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam.</p>
+						<p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc urna. Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique. Sed id sem et massa ornare pellentesque. Maecenas pharetra porta accumsan. </p>
+						<p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus, non hendrerit ipsum arcu tristique est.</p>
+					</section>
+				</div>
+
+		</div>
+		<div class="col-4 col-12-narrower">
+
+			<!-- Sidebar -->
+				<div class="sidebar">
+					<section>
+						<header>
+							<h3>Color of the Bubbles</h3>
+						</header>
+						<p class="dot1_text"><span class="dot1"></span>Main Characters</p>
+						<p class="dot2_text"><span class="dot2"></span>Good Characters</p>
+						<p class="dot3_text"><span class="dot3"></span>Evil Characters</p>
+						<p class="dot4_text"><span class="dot4"></span>Both Good and Evil Characters</p>
+						<p class="dot5_text"><span class="dot5"></span>Not Live Animals</p>
+						<br>
+						<p>The bubble represents how many times this word appears in the novel.</p>
+						<p>The thickness of the line represents the times these two words appear together.</p>
+						<p>If you hover on them, detailed information will appear in the tooltip.</p>
+					</section>
+
+					<section>
+						<!-- <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a> -->
+						<header>
+							<h3>Amet Lorem Tempus</h3>
+						</header>
+						<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+
+						<footer>
+							<ul class="buttons">
+								<li><a href="http://www.eugenewoodbury.com/east/index.html" class="button small">Read the Book</a></li>
+							</ul>
+						</footer>
+					</section>
+				</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- Six -->
+	<header class="special container" id="book6-title">
+		<span class="icon solid fa-book"></span>
+		<h2>Dreaming of Paradise</h2>
+		<div class="narrow-width">
+		<p>We are familiar with western fantasy world, like Harry Potter, Game of Thrones. But do you know eastern fantasy world? Maybe you are a Japanese anime and you are familiar with One piece, Naruto. However, I guess you never watch, even didn’t heard this anime-the Twelve Kingdoms.</p>
+		<p>The work, the Twelve Kingdoms, originally is a series of fantasy novels wrote by Fuyumi Ono, then made into an anime in 2002. The author Fuyumi Ono created this fantasy world inspired by Chinese mythology, like Classic of Mountains and Seas, and ancient eastern organizational books, like Rites of Zhou. In addition, female characters under Fuyumi’s writing has enormous charm, who inspired me to firstly think about what kind of adult I want to be in the future.</p>
+		<p>As one of its’ big fans, I’d like to invite you to enjoy the unique world of the Twelve Kingdoms through data visualization.</p>
+	</div>
+	</header>
+
+	<section class="wrapper style4 container">
+
+			<div class="row gtr-150">
+				<div class="col-4 col-12-narrower">
+
+					<!-- Sidebar -->
+						<div class="sidebar">
+							<section>
+								<header>
+									<h3>Color of the Bubbles</h3>
+								</header>
+								<p class="dot1_text"><span class="dot1"></span>Main Characters</p>
+								<p class="dot2_text"><span class="dot2"></span>Good Characters</p>
+								<p class="dot3_text"><span class="dot3"></span>Evil Characters</p>
+								<p class="dot4_text"><span class="dot4"></span>Both Good and Evil Characters</p>
+								<p class="dot5_text"><span class="dot5"></span>Not Live Animals</p>
+								<br>
+								<p>The bubble represents how many times this word appears in the novel.</p>
+								<p>The thickness of the line represents the times these two words appear together.</p>
+								<p>If you hover on them, detailed information will appear in the tooltip.</p>
+							</section>
+
+							<section>
+								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+								<header>
+									<h3>Amet Lorem Tempus</h3>
+								</header>
+								<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+
+								<footer>
+									<ul class="buttons">
+										<li><a href="http://www.eugenewoodbury.com/kasho/index.html" class="button small">Read the Book</a></li>
+									</ul>
+								</footer>
+							</section>
+						</div>
+
+				</div>
+				<div class="col-8 col-12-narrower imp-narrower">
+
+					<!-- Content -->
+						<div class="content">
+							<section>
+								<section id="book6"></section>
+								<header>
+									<h3>Dolore Amet Consequat</h3>
+								</header>
+								<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum massa. Morbi eu faucibus massa. Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam.</p>
+								<p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc urna. Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique. Sed id sem et massa ornare pellentesque. Maecenas pharetra porta accumsan. </p>
+								<p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus, non hendrerit ipsum arcu tristique est.</p>
+							</section>
+						</div>
+
+				</div>
+			</div>
+		</section>
+<!-- Seven -->
+<header class="special container" id="book7-title">
+	<span class="icon solid fa-book"></span>
+	<h2>Hisho's Birds</h2>
+	<div class="narrow-width">
+	<p>We are familiar with western fantasy world, like Harry Potter, Game of Thrones. But do you know eastern fantasy world? Maybe you are a Japanese anime and you are familiar with One piece, Naruto. However, I guess you never watch, even didn’t heard this anime-the Twelve Kingdoms.</p>
+	<p>The work, the Twelve Kingdoms, originally is a series of fantasy novels wrote by Fuyumi Ono, then made into an anime in 2002. The author Fuyumi Ono created this fantasy world inspired by Chinese mythology, like Classic of Mountains and Seas, and ancient eastern organizational books, like Rites of Zhou. In addition, female characters under Fuyumi’s writing has enormous charm, who inspired me to firstly think about what kind of adult I want to be in the future.</p>
+	<p>As one of its’ big fans, I’d like to invite you to enjoy the unique world of the Twelve Kingdoms through data visualization.</p>
+</div>
+</header>
+
+<section class="wrapper style4 container">
+
+	<div class="row gtr-150">
+		<div class="col-8 col-12-narrower">
+
+			<!-- Content -->
+				<div class="content">
+					<section>
+						<section id="book7"></section>
+						<header>
+							<h3>Dolore Amet Consequat</h3>
+						</header>
+						<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum massa. Morbi eu faucibus massa. Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam.</p>
+						<p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc urna. Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique. Sed id sem et massa ornare pellentesque. Maecenas pharetra porta accumsan. </p>
+						<p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus, non hendrerit ipsum arcu tristique est.</p>
+					</section>
+				</div>
+
+		</div>
+		<div class="col-4 col-12-narrower">
+
+			<!-- Sidebar -->
+				<div class="sidebar">
+					<section>
+						<header>
+							<h3>Color of the Bubbles</h3>
+						</header>
+						<p class="dot1_text"><span class="dot1"></span>Main Characters</p>
+						<p class="dot2_text"><span class="dot2"></span>Good Characters</p>
+						<p class="dot3_text"><span class="dot3"></span>Evil Characters</p>
+						<p class="dot4_text"><span class="dot4"></span>Both Good and Evil Characters</p>
+						<p class="dot5_text"><span class="dot5"></span>Not Live Animals</p>
+						<br>
+						<p>The bubble represents how many times this word appears in the novel.</p>
+						<p>The thickness of the line represents the times these two words appear together.</p>
+						<p>If you hover on them, detailed information will appear in the tooltip.</p>
+					</section>
+
+					<section>
+						<!-- <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a> -->
+						<header>
+							<h3>Amet Lorem Tempus</h3>
+						</header>
+						<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+
+						<footer>
+							<ul class="buttons">
+								<li><a href="http://www.eugenewoodbury.com/hisho/index.html" class="button small">Read the Book</a></li>
+							</ul>
+						</footer>
+					</section>
+				</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- Book1to7 -->
+<header class="special container" id="book1to7-title">
+	<span class="icon solid fa-book"></span>
+	<h2>Book 1 to 7</h2>
+	<div class="narrow-width">
+	<p>We are familiar with western fantasy world, like Harry Potter, Game of Thrones. But do you know eastern fantasy world? Maybe you are a Japanese anime and you are familiar with One piece, Naruto. However, I guess you never watch, even didn’t heard this anime-the Twelve Kingdoms.</p>
+	<p>The work, the Twelve Kingdoms, originally is a series of fantasy novels wrote by Fuyumi Ono, then made into an anime in 2002. The author Fuyumi Ono created this fantasy world inspired by Chinese mythology, like Classic of Mountains and Seas, and ancient eastern organizational books, like Rites of Zhou. In addition, female characters under Fuyumi’s writing has enormous charm, who inspired me to firstly think about what kind of adult I want to be in the future.</p>
+	<p>As one of its’ big fans, I’d like to invite you to enjoy the unique world of the Twelve Kingdoms through data visualization.</p>
+</div>
+</header>
+					<section class="wrapper style4 container">
+
+						<!-- Content -->
+							<div class="content">
+								<section>
+									<header>
+										<h3>Dolore Amet Consequat</h3>
+									</header>
+									<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Sed id sem et massa ornare pellentesque. Maecenas pharetra porta accumsan. </p>
+									<section id="book1to7"></section>
+									<p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus, non hendrerit ipsum arcu tristique est.</p>
+								</section>
+							</div>
+
+					</section>
+
+<!-- Bullet -->
+<header class="special container" id="bullet-screen-comments">
+	<span class="icon solid fa-film"></span>
+	<h2>Bullet screen comments from Bilibili</h2>
+	<div class="narrow-width">
+	<p>We are familiar with western fantasy world, like Harry Potter, Game of Thrones. But do you know eastern fantasy world? Maybe you are a Japanese anime and you are familiar with One piece, Naruto. However, I guess you never watch, even didn’t heard this anime-the Twelve Kingdoms.</p>
+	<p>The work, the Twelve Kingdoms, originally is a series of fantasy novels wrote by Fuyumi Ono, then made into an anime in 2002. The author Fuyumi Ono created this fantasy world inspired by Chinese mythology, like Classic of Mountains and Seas, and ancient eastern organizational books, like Rites of Zhou. In addition, female characters under Fuyumi’s writing has enormous charm, who inspired me to firstly think about what kind of adult I want to be in the future.</p>
+	<p>As one of its’ big fans, I’d like to invite you to enjoy the unique world of the Twelve Kingdoms through data visualization.</p>
+</div>
+</header>
+					<section class="wrapper style4 container">
+
+						<!-- Content -->
+							<div class="content">
+								<section>
+									<header>
+										<h3>Dolore Amet Consequat</h3>
+									</header>
+									<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Sed id sem et massa ornare pellentesque. Maecenas pharetra porta accumsan. </p>
+									<section id="bullet"></section>
+									<p id="myVideoComment"></p>
+									<video id="myVideo" controls>
+									  <source id="mp4_src" src="video/01.mp4" type="video/mp4">
+									  Your browser does not support HTML5 video.
+									</video>
+									<p id="description_video">In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus, non hendrerit ipsum arcu tristique est.</p>
+								</section>
+							</div>
+
+					</section>
+
+<!-- Bottom -->
+<header class="special container" id="bottom-comments">
+	<span class="icon solid fa-film"></span>
+	<h2>Bottom comments from Bilibili</h2>
+	<div class="narrow-width">
+	<p>We are familiar with western fantasy world, like Harry Potter, Game of Thrones. But do you know eastern fantasy world? Maybe you are a Japanese anime and you are familiar with One piece, Naruto. However, I guess you never watch, even didn’t heard this anime-the Twelve Kingdoms.</p>
+	<p>The work, the Twelve Kingdoms, originally is a series of fantasy novels wrote by Fuyumi Ono, then made into an anime in 2002. The author Fuyumi Ono created this fantasy world inspired by Chinese mythology, like Classic of Mountains and Seas, and ancient eastern organizational books, like Rites of Zhou. In addition, female characters under Fuyumi’s writing has enormous charm, who inspired me to firstly think about what kind of adult I want to be in the future.</p>
+	<p>As one of its’ big fans, I’d like to invite you to enjoy the unique world of the Twelve Kingdoms through data visualization.</p>
+</div>
+</header>
+					<section class="wrapper style4 container">
+
+						<!-- Content -->
+							<div class="content">
+								<section>
+									<section id="bottom-comments-chart"></section>
+									<header>
+										<h3>Dolore Amet Consequat</h3>
+									</header>
+									<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Sed id sem et massa ornare pellentesque. Maecenas pharetra porta accumsan. </p>
+									<section id="bottom"></section>
+									<p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus, non hendrerit ipsum arcu tristique est.</p>
+								</section>
+							</div>
+
+					</section>
+				</article>
+
+			<!-- CTA -->
+				<section id="cta">
+
+					<header>
+						<h2>Speacial Thanks</h2>
+						<p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
+						<h2>Data, Analysis & Visualization</h2>
+						<p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
+						<ul class="buttons">
+							<li><a href="#" class="button small">Learn More</a></li>
+						</ul>
+					</header>
+
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="#" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>Designed and Coded by Yutong Han&copy; 2020 by <a href="#">Github</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script type="text/javascript" src="assets/js/book1.js"></script>
+		<script type="text/javascript" src="assets/js/book2.js"></script>
+		<script type="text/javascript" src="assets/js/book3.js"></script>
+		<script type="text/javascript" src="assets/js/book4.js"></script>
+		<script type="text/javascript" src="assets/js/book5.js"></script>
+		<script type="text/javascript" src="assets/js/book6.js"></script>
+		<script type="text/javascript" src="assets/js/book7.js"></script>
+		<script type="text/javascript" src="assets/js/book1to7.js"></script>
+		<script type="text/javascript" src="assets/js/bullet.js"></script>
+		<script type="text/javascript" src="assets/js/bullet_video.js"></script>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
