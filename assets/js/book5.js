@@ -1,132 +1,110 @@
 //Set margins and sizes
-var margin02 = {
+var margin05 = {
   top: 0,
-  bottom: 50,
+  bottom: 40,
   right: 30,
   left: 0
 };
-
-var width02;
-var height02;
-
-if(window.innerWidth > 840) {
-  width02 = window.innerWidth*0.5 - margin02.left - margin02.right;
-  height02 = window.innerWidth*0.5 - margin02.top - margin02.bottom;
-} else if(window.innerWidth <= 840) {
-  width02 = window.innerWidth - margin02.left - margin02.right;
-  height02 = window.innerWidth*0.8 - margin02.top - margin02.bottom;
-}
-
+var width05 = window.innerWidth*0.4 - margin05.left - margin05.right;
+var height05 = window.innerWidth*0.35 - margin05.top - margin05.bottom;
 //Load Color Scale
-var colordata02 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-var colors02 = d3.scaleOrdinal()
-               .domain(colordata02)
+var colordata05 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+var colors05 = d3.scaleOrdinal()
+               .domain(colordata05)
                .range(["#f3c623", "#d63447", "#84a9ac", "#844685", "#cfd186"]);
-var div02 = d3.select("#book2").append("div")
+var div05 = d3.select("#book5").append("div")
           .attr("class", "tooltip")
           .style("opacity", 0);
 
 //Load External Data
-d3.json("assets/data/book2.json", function(dataset){
+d3.json("assets/data/book5.json", function(dataset){
   //Extract data from dataset
-  var nodes02 = dataset.nodes,
-    links02 = dataset.links;
-    console.log(dataset);
+  var nodes05 = dataset.nodes,
+    links05 = dataset.links;
+    // console.log(dataset);
   //Create Force Layout
-  var force02 = d3.forceSimulation()
+  var force05 = d3.forceSimulation()
           .force("link", d3.forceLink().id(function(d,i) {
               return i;
           })
           .distance(function(d){
-            if(window.innerWidth > 1200) {
-              if(d.weight > 34) {
-                return 120;
-              } else {
-                return 40 + d.weight*2;
-              }
-            } else if(window.innerWidth <= 1200) {
-              if(d.weight > 34) {
-                return 20;
-              } else {
-                return d.weight*0.5;
-              }
+            if(d.weight > 37) {
+              return 130 + d.weight;
+            } else if (37 > d.weight > 29) {
+              return 60 + d.weight*2;
+            } else {
+              return 60;
             }
           }))
           .force("charge", d3.forceManyBody().strength(-400 ))
-          .force("center", d3.forceCenter(width02 / 2,height02 / 2));
+          .force("center", d3.forceCenter(width05 / 2,height05 / 2));
 
-  var svgElement02 = d3.select("#book2")
+  var svgElement05 = d3.select("#book5")
             .append("svg")
-            .attr("width", width02+margin02.left+margin02.right) .attr("height", height02+margin02.top+margin02.bottom)
+            .attr("width", width05+margin05.left+margin05.right) .attr("height", height05+margin05.top+margin05.bottom)
             .append("g")
-            .attr("transform","translate("+margin02.left+","+margin02.top+")");
+            .attr("transform","translate("+margin05.left+","+margin05.top+")");
   //Add links to SVG
-  var link02 = svgElement02.append('g')
+  var link05 = svgElement05.append('g')
           .attr('class','links')
           .selectAll("line")
-          .data(links02)
+          .data(links05)
           .enter()
           .append("line")
           .attr("stroke-width", function(d){ return d.weight/10; })
           .attr("class", "links")
           .on("mousemove", function(d) {
-            div02.transition()
+            div05.transition()
       						.duration(200)
       						.style("opacity", .9);
-      			div02.html("<p> Proximity between " + d.source.character + " and " + d.target.character + ": " + d.weight + "</p>")
+      			div05.html("<p> Proximity between " + d.source.character + " and " + d.target.character + ": " + d.weight + "</p>")
       						.style("left", (d3.event.pageX) + "px")
       						.style("top", (d3.event.pageY - 28) + "px");
       						})
           .on("mouseout", function(d){
-            div02.transition()
+            div05.transition()
            .duration(500)
            .style("opacity", 0);
          });;
 
   //Add nodes to SVG
-  var node02 = svgElement02.append('g')
+  var node05 = svgElement05.append('g')
           .attr('class','nodes')
           .selectAll('circle')
-          .data(nodes02)
+          .data(nodes05)
           .enter()
           .append("circle")
           .attr("class", "bubbles")
-          .attr("r", function(d){
-            if(window.innerWidth > 1200) {
-            return d.influence*0.1;
-          } else if(window.innerWidth <= 1200) {
-            return d.influence*0.05;
-          }
-           })
+          .attr("r", function(d){ return d.influence*0.1; })
           .attr('fill',function (d,i) {
-              return colors02(d.zone);
+              return colors05(d.zone);
           })
           .on("mousemove", function(d) {
             if(d.category == 1) {
-            div02.transition()
+            div05.transition()
           .duration(200)
           .style("opacity", .9);
-      div02.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p> Race: " + d.race + "</p> <p>Intro: " + d.intro +"</p>")
+      div05.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p> Race: " + d.race + "</p> <p>Intro: " + d.intro +"</p>")
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY - 28) + "px");
         } else if (d.category == 2){
-          div02.transition()
+          div05.transition()
         .duration(200)
         .style("opacity", .9);
-    div02.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
+    div05.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
         .style("left", (d3.event.pageX) + "px")
         .style("top", (d3.event.pageY - 28) + "px");
       } else if (d.category == 3){
-          div02.transition()
+          div05.transition()
         .duration(200)
         .style("opacity", .9);
-    div02.html("<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
+    div05.html("<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
         .style("left", (d3.event.pageX) + "px")
         .style("top", (d3.event.pageY - 28) + "px");
         }
         })
           .on("mouseout", function(d){
-            div02.transition()
+            div05.transition()
            .duration(500)
            .style("opacity", 0);
          })
@@ -136,8 +114,8 @@ d3.json("assets/data/book2.json", function(dataset){
                   .on("end", dragended));
 
   //Add labels to each node
-  var label02 = svgElement02.selectAll(null)
-            .data(nodes02)
+  var label05 = svgElement05.selectAll(null)
+            .data(nodes05)
             .enter()
             .append('text')
             .attr("dy", ".05em")
@@ -145,52 +123,44 @@ d3.json("assets/data/book2.json", function(dataset){
             .text(d => d.character)
             .attr("fill", "white")
             .attr('font-size', function(d){
-              if(window.innerWidth > 1200) {
-                if(d.influence > 170) {
-                  return d.influence*0.055;
-                } else {
-                  return 0;
-                }
-              } else if(window.innerWidth <= 1200) {
-                if(d.influence > 170) {
-                  return d.influence*0.027;
-                } else {
-                  return 0;
-                }
-              }
-            })
+                          if(d.influence > 170) {
+                            return d.influence*0.055;
+                          } else {
+                            return 0;
+                          }
+                        })
             .on("mousemove", function(d) {
               if(d.category == 1) {
-              div02.transition()
+              div05.transition()
             .duration(200)
             .style("opacity", .9);
-        div02.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p> Race: " + d.race + "</p> <p>Intro: " + d.intro +"</p>")
+        div05.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p> Race: " + d.race + "</p> <p>Intro: " + d.intro +"</p>")
             .style("left", (d3.event.pageX) + "px")
             .style("top", (d3.event.pageY - 28) + "px");
           } else if (d.category == 2){
-            div02.transition()
+            div05.transition()
           .duration(200)
           .style("opacity", .9);
-      div02.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
+      div05.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY - 28) + "px");
         } else if (d.category == 3){
-            div02.transition()
+            div05.transition()
           .duration(200)
           .style("opacity", .9);
-      div02.html("<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
+      div05.html("<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY - 28) + "px");
           }
           })
             .on("mouseout", function(d){
-              div02.transition()
+              div05.transition()
              .duration(500)
              .style("opacity", 0);
            });
 
- var label02_2 = svgElement02.selectAll(null)
-            .data(nodes02)
+ var label05_2 = svgElement05.selectAll(null)
+            .data(nodes05)
             .enter()
             .append('text')
             .attr("dy", "1.2em")
@@ -198,46 +168,38 @@ d3.json("assets/data/book2.json", function(dataset){
             .text(d => d.influence)
             .attr("fill", "white")
             .attr('font-size', function(d){
-              if(window.innerWidth > 1200) {
-                if(d.influence > 170) {
-                  return d.influence*0.055;
-                } else {
-                  return 0;
-                }
-              } else if(window.innerWidth <= 1200) {
-                if(d.influence > 170) {
-                  return d.influence*0.027;
-                } else {
-                  return 0;
-                }
-              }
-            })
+                          if(d.influence > 170) {
+                            return d.influence*0.055;
+                          } else {
+                            return 0;
+                          }
+                        })
             .on("mousemove", function(d) {
               if(d.category == 1) {
-              div02.transition()
+              div05.transition()
             .duration(200)
             .style("opacity", .9);
-        div02.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p> Race: " + d.race + "</p> <p>Intro: " + d.intro +"</p>")
+        div05.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p> Race: " + d.race + "</p> <p>Intro: " + d.intro +"</p>")
             .style("left", (d3.event.pageX) + "px")
             .style("top", (d3.event.pageY - 28) + "px");
           } else if (d.category == 2){
-            div02.transition()
+            div05.transition()
           .duration(200)
           .style("opacity", .9);
-      div02.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
+      div05.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY - 28) + "px");
         } else if (d.category == 3){
-            div02.transition()
+            div05.transition()
           .duration(200)
           .style("opacity", .9);
-      div02.html("<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
+      div05.html("<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY - 28) + "px");
           }
           })
             .on("mouseout", function(d){
-              div02.transition()
+              div05.transition()
              .duration(500)
              .style("opacity", 0);
            });
@@ -256,32 +218,32 @@ d3.json("assets/data/book2.json", function(dataset){
   // 				.attr("fill", "white");
 
   //This function will be executed for every tick of force layout
-  force02
-          .nodes(nodes02)
+  force05
+          .nodes(nodes05)
           .on("tick", ticked);
-  force02
+  force05
           .force("link")
-          .links(links02);
+          .links(links05);
   function ticked() {
     //Set X and Y of node
-    node02
+    node05
       .attr("cx", (data) => { return data.x; })
       .attr("cy", (data) => { return data.y; });
-    label02
+    label05
       .attr('x', (data) => { return data.x })
       .attr('y', (data) => { return data.y });
-    label02_2
+    label05_2
       .attr('x', (data) => { return data.x })
       .attr('y', (data) => { return data.y });
       //Set X, Y of link
-    link02.attr("x1", function(d){ return d.source.x; })
-    link02.attr("y1", function(d){ return d.source.y; })
-    link02.attr("x2", function(d){ return d.target.x; })
-    link02.attr("y2", function(d){ return d.target.y; });
+    link05.attr("x1", function(d){ return d.source.x; })
+    link05.attr("y1", function(d){ return d.source.y; })
+    link05.attr("x2", function(d){ return d.target.x; })
+    link05.attr("y2", function(d){ return d.target.y; });
   }
   //Start the force layout calculation
   function dragstarted(d) {
-      if (!d3.event.active) force02.alphaTarget(0.3).restart();
+      if (!d3.event.active) force05.alphaTarget(0.3).restart();
       d.fx = d.x;
       d.fy = d.y;
   }
@@ -292,7 +254,7 @@ d3.json("assets/data/book2.json", function(dataset){
   }
 
   function dragended(d) {
-      if (!d3.event.active) force02.alphaTarget(0);
+      if (!d3.event.active) force05.alphaTarget(0);
       d.fx = null;
       d.fy = null;
   }

@@ -1874,7 +1874,7 @@ input, select, textarea {
 
 		.image.featured {
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 0 0 0 0;
 		}
 
 			.image.featured img {
@@ -2548,7 +2548,6 @@ input, select, textarea {
 			-webkit-animation-fill-mode: forwards;
 			-ms-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
-			background: rgba(52, 27, 43, 0.5);
 			color: #fff;
 			display: inline-block;
 			opacity: 0;

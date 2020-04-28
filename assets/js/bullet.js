@@ -18,9 +18,20 @@ d3.csv(fileName, function(error, data) {
 
 var makeVis = function(episodeMap) {
     // Define dimensions of vis
-    var margin = { top: 50, right: 30, bottom: 30, left: 40 },
-        width  = window.innerWidth*0.6 - margin.left - margin.right,
-        height = window.innerHeight/2 - margin.top  - margin.bottom;
+    var margin = { top: 50, right: 30, bottom: 30, left: 40 };
+        // width  = window.innerWidth*0.6 - margin.left - margin.right,
+        // height = window.innerHeight/2 - margin.top  - margin.bottom;
+
+        if(window.innerWidth > 1120) {
+          width = window.innerWidth*0.6 - margin.left - margin.right;
+          height = window.innerHeight/2 - margin.top - margin.bottom;
+        } else if(1120 >= window.innerWidth) {
+          width = window.innerWidth*0.75 - margin.left - margin.right;
+          height = window.innerHeight/2 - margin.top - margin.bottom;
+        } else if(window.innerWidth <= 840) {
+          width = window.innerWidth - margin.left - margin.right;
+          height = window.innerHeight/2 - margin.top - margin.bottom;
+        }
 
     // Make x scale
     var xScale = d3.scaleBand()
@@ -59,16 +70,16 @@ var makeVis = function(episodeMap) {
 
     var yAxisHandleForUpdate = canvas.append("g")
         .attr("class", "y axis")
-        .call(yAxis);
+        .call(yAxis.ticks(5));
 
     var leftyAxis = canvas.append("g")
         .attr("class", "y axis");
     leftyAxis.append("text")
-        .attr("x", 0)
-        .attr("y", 0-margin.top/2)
+        .attr("x", 0-margin.top/1.28)
+        .attr("y", 0-margin.top/1.5)
         .attr("dy", ".71em")
         .style("text-anchor", "start")
-        .text("The Number of Comments");
+        .text("The Number of Comments on Bilibili per minute of episode");
 
     var leftAxis = canvas.append("g")
         .attr("class", "y axis");
@@ -89,16 +100,6 @@ var makeVis = function(episodeMap) {
         .attr("dy", ".71em")
         .style("text-anchor", "end")
         .text("End of Episode");
-
-    var rightAxis2 = canvas.append("g")
-        .attr("class", "y axis");
-
-    rightAxis2.append("text")
-        .attr("x", width)
-        .attr("y", height-margin.top)
-        .attr("dy", ".71em")
-        .style("text-anchor", "start")
-        .text("Minute");
 
     var updateBars = function(data) {
         // First update the y-axis domain to match data

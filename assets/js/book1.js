@@ -4,8 +4,16 @@ var margin = {
 		right: 30,
 		left: 50
 	};
-	var width = window.innerWidth*0.4 - margin.left - margin.right;
-	var height = window.innerHeight*0.6 - margin.top - margin.bottom;
+	var width;
+	var height;
+
+	if(window.innerWidth > 840) {
+	  width = window.innerWidth*0.5 - margin.left - margin.right;
+	  height = window.innerWidth*0.4 - margin.top - margin.bottom;
+	} else if(window.innerWidth <= 840) {
+	  width = window.innerWidth - margin.left - margin.right;
+	  height = window.innerWidth*0.7 - margin.top - margin.bottom;
+	}
 	//Load Color Scale
 	var colordata = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 	var colors = d3.scaleOrdinal()
@@ -33,7 +41,7 @@ var margin = {
 								return 110 + d.weight*2;
 							}
 						}))
-            .force("charge", d3.forceManyBody().strength(-400 ))
+            .force("charge", d3.forceManyBody().strength(-350 ))
             .force("center", d3.forceCenter(width / 2,height / 2));
 
 		var svgElement = d3.select("#book1")

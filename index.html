@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/styles.css" />
 		<link rel="stylesheet" href="assets/css/chart.css" />
+		<link rel="stylesheet" href="assets/css/detail.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script type="text/javascript" src="https://d3js.org/d3.v4.js"></script>
 	</head>
@@ -48,18 +49,12 @@
 			<!-- Banner -->
 				<section id="banner">
 
-					<!--
-						".inner" is set up as an inline-block so it automatically expands
-						in both directions to fit whatever's inside it. This means it won't
-						automatically wrap lines, so be sure to use line breaks where
-						appropriate (<br />).
-					-->
-					<div class="inner">
+					<div class="inner" style="margin-top:40%;">
 
 						<header>
 							<h2>Eastern Fantasy World</h2>
 						</header>
-						<p>The Twelve Kingdoms is a series of eastern fantasy novels wrote by Fuyumi Ono.
+						<p>The Twelve Kingdoms is a series of eastern fantasy novels written by Fuyumi Ono.
 						<br />
 						As one of its loyal audiences, I want to introduce it to more people.
 						<br />
@@ -73,17 +68,38 @@
 				<article id="main">
 					<header class="container">
 						<div class="narrow-width">
-						<p>We are familiar with western fantasy world, like Harry Potter, Game of Thrones. But do you know eastern fantasy world? Maybe you are a Japanese anime and you are familiar with One piece, Naruto. However, I guess you never watch, even didn’t heard this anime-the Twelve Kingdoms.</p>
-						<p>The work, the Twelve Kingdoms, originally is a series of fantasy novels wrote by Fuyumi Ono, then made into an anime in 2002. The author Fuyumi Ono created this fantasy world inspired by Chinese mythology, like Classic of Mountains and Seas, and ancient eastern organizational books, like Rites of Zhou. In addition, female characters under Fuyumi’s writing has enormous charm, who inspired me to firstly think about what kind of adult I want to be in the future.</p>
-						<p>As one of its’ big fans, I’d like to invite you to enjoy the unique world of the Twelve Kingdoms through data visualization.</p>
+						<p>We are familiar with the western fantasy world, like Harry Potter, Game of Thrones. But do you know the eastern fantasy world? Maybe you are an anime fan and you are familiar with One Piece, Naruto. However, I guess you never watch, even didn’t hear this anime-the Twelve Kingdoms.</p>
+						<p>The work, the Twelve Kingdoms, originally is a series of fantasy novels written by Fuyumi Ono, then made into an anime in 2002.</p>
+						<p>The world of the Twelve Kingdoms is based on the coexistence of youma (monster), and sages. The political institution is similar to ancient China, especially Zhou dynasty.</p>
+						<p>There are twelve kingdoms, twelve kings and twelve kirins. Kirin possess the form of creature resembling a hybrid between a horse and a deer with a single horn from its forehead, somewhat like a unicorn. Kirin can shift into human form. Each kingdom has its own kirin.</p>
+						<a class="image featured"><img src="images/kirin.png" alt="" /></a>
+						<p class="image_text" style="text-align: center;">Kirin</p>
+
+						<p>The king is selected by the kirin, rather than by blood or familial relationships, according to the will of Tentei, the Emperor of Heaven.
+						</p>
+						<p>In the world of The Twelve Kingdoms, the king has to follow three rules, or the king will die. First one is working hard to run the country. If the king does great job, he will be undead and ageless, like vampires. If the king becomes brutal, unmerciful, loses the way and fails to govern properly, the kirin will be sick, which is called Shitsudou. If the king keeps wrongheaded, the sickness of kirin gets worse with time and causes the kirin to die. If the kirin dies, the king will lose the mandate of heaven and eventually die within a year of the kirin's death. Typically, a king with a long and stable reign will have a prosperous and thriving kingdom, while short-lived monarchs tend to leave their kingdoms in a state of turmoil that wild youma appears, and weather becomes harsh.
+						</p>
+						<a class="image featured"><img src="images/sick_kirin.png" alt="" /></a>
+						<p class="image_text" style="text-align: center;">Sicked Kirin</p>
+
+						<p>The second rule is that the king can’t escape his responsibility to be the king. If the king decides to reject the will of Tentei, he will quickly die.
+						</p>
+						<p>The third rule is that the king from one country can’t interfere, or send an army into battle to other countries without consent. If the king intervenes or dispatches, the king and the kirin will quickly die (触犯侵略之罪<觌面之罪>).</p>
+						<p>In the Twelve Kingdoms, eight of the Twelve Kingdoms border at least one of these four seas, extending from the center like the petals of a flower. The kingdoms are surrounded by an endless sea called the Kyokai (虚海, Void Sea). At the center of the world are Five Sacred Mountains surround the Yellow Sea (the Kokai), a barren wasteland of rock, desert, swamp, and thorns where youma inhabit. The Five Sacred Mountains, which includes Mount Hou, is the mythic birthplace of kirin where all the kings of the Twelve Kingdoms must ascend in order to accept the mandate of heaven before they can claim their throne.</p>
+						<p>Before we begin the story of the Twelve Kingdoms, there is one last thing you need to know, Shoku. Shoku(蝕) are magical storms that connects the Twelve Kingdoms’ world to the lands of Hourai (Japan) and Kan (China). People might be transformed between these two worlds during Shoku. The storms naturally occur, but are extremely damaging to the world it impacts. Unless absolutely compelled, kirin and highly ranked sages shall not cross between the worlds in this way.</p>
+						<p>Above are basic settings for the world of the Twelve Kingdoms. As one of Fuyumi's big fans, I’d like to invite you to enjoy the unique world through data visualization.</p>
 						</div>
 					</header>
 
 					<header class="special container" id="book1-title">
 						<span class="icon solid fa-book-reader"></span>
-						<h2>Book1: <strong>Girl</strong> with <strong>sword</strong></h2>
+						<h2>Shadow of the Moon, a Shadow of Shadows</h2>
 						<div class="narrow-width">
-						<p>Youko, who used to be a normal high-schooler in Japan, suddenly met a sea of monsters’ attack and whiskey away to an unearthly realm. Youko is left with only a sword. This young girl had to quickly grow up to confront ample challenges.</p>
+						<p>Youko, who used to be a normal high-schooler in Japan, is suddenly attacked by a sea of youma and whisked her away to an unearthly realm. Youko is left with only a sword. This young girl had to quickly grow up to confront ample challenges. During the adventure, she gradually found she is not a normal person anymore.
+						</p>
+						<br>
+						<a class="image featured"><img src="images/youma.png" alt="" /></a>
+						<p class="image_text" style="text-align: center;">Youma</p>
 					</div>
 					</header>
 
@@ -97,12 +113,13 @@
 									<div class="content">
 										<section>
 											<section id="book1"></section>
-											<header>
-												<h3>Dolore Amet Consequat</h3>
-											</header>
-											<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum massa. Morbi eu faucibus massa. Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam.</p>
-											<p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc urna. Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique. Sed id sem et massa ornare pellentesque. Maecenas pharetra porta accumsan. </p>
-											<p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus, non hendrerit ipsum arcu tristique est.</p>
+											<p>There can be no doubt that the bubble of <strong>Youko</strong> is the biggest. She is the main character and this novel is talking about her adventure in the unknown world. Youko is regarded as a <a href="#Kaikyaku" class="setting_text5 scrolly">Kaikyaku</a> after she went to the world of the Twelve Kingdoms. She was both hunted by the <a href="#Youma" class="setting_text3 scrolly">youma</a> and the people in country Kou, because the <a href="#KingKou" class="setting_text3 scrolly">king of Kou</a> dislike Kaikyaku and Hanjyuu (a half-beast that has both a human and an animal form).</p>
+
+											<p>And the second large bubble is <strong>Rakushun</strong>, Youko’s close friend. When Youko’s strength gave out and fell into a coma, Rakushun took her home, rather than reported her to the local ruler. Though Youko was initially distrustful of him, he patiently took care of Youko. He is very intelligent and knowledgeable, teaching Youko essential skills on how to live in the world. Youko went to the country En, where is peaceful and prosperous, to find a way back to Japan, accompanied by Rakushun. During the travel, they became close friends. In the chart, the line between them is also the thickest. The number is 117 that they appeared together in the novel.</p>
+											<a class="image featured"><img src="images/care.png" alt="" /></a>
+											<p class="image_text" style="text-align: center;">Rakushun took care of Youko.</p>
+
+											<p>The third biggest bubble is the <strong>sword</strong>, Suiguutou. It’s a sword that can be wielded only by the rightful king of Kei. Its most dangerous ability is the power to present visions of past and future, and of places far-away to bewitch the wielder. Sword and scabbard sealed each other, so that the scabbard controlled the sword's visions and prevented people from drawing the sword, while the sword prevented the monkey spirit from getting loose. Youko loses the scabbard, and thus gets taunted by both visions and the monkey until she kills the monkey and picks up the dead scabbard.</p>
 										</section>
 									</div>
 
@@ -113,26 +130,31 @@
 									<div class="sidebar">
 										<section>
 											<header>
-												<h3>Magna Feugiat</h3>
+												<h3>Color of the Bubbles</h3>
 											</header>
-											<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit..</p>
-											<footer>
-												<!-- <ul class="buttons">
-													<li><a href="#" class="button small">Learn More</a></li>
-												</ul> -->
-											</footer>
+											<p class="dot1_text"><span class="dot1"></span>Main Characters</p>
+											<p class="dot2_text"><span class="dot2"></span>Good Characters</p>
+											<p class="dot3_text"><span class="dot3"></span>Evil Characters</p>
+											<p class="dot4_text"><span class="dot4"></span>Both Good and Evil Characters</p>
+											<p class="dot5_text"><span class="dot5"></span>Not Live Animals</p>
+											<br>
+											<p>The bubble represents how many times this word appears in the novel.</p>
+											<p>The thickness of the line represents the times these two words appear together.</p>
+											<p>If you hover on them, detailed information will appear in the tooltip.</p>
 										</section>
 
 										<section>
-											<!-- <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a> -->
 											<header>
-												<h3>Amet Lorem Tempus</h3>
+												<h3>Special setting</h3>
 											</header>
-											<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+											<p><strong id="Kaikyaku" class="dot5_text anchor">Kaikyaku</strong>: people from the sea who were caught in a Shoku from Japan and swept into the world of the Twelve Kingdoms. They are unable to speak or understand the native language and may be subject to persecution, particularly as a result of Shoku. But some Kaikyakus also bring rare things to the world, like paper, ceramics, print technology, medicine, and Buddhism.</p>
+											<p><strong id="Youma" class="dot3_text anchor">Youma</strong>: creatures with supernatural powers, generally evil unless in the service of a kirin. They tend to appear in greater numbers when a kingdom lacks the king.</p>
+											<p><strong id="KingKou" class="dot3_text anchor">King of Kou</strong>: the king made various efforts to capture and .kill Youko, because he was afraid of Youko’s ascension to the throne of Kei, believing that she will bring the country the same prosperity as En and Kou, whose kings have ruled over 500 years. In that case, Kou will be poorest country.  </p>
+
 											<footer>
-												<!-- <ul class="buttons">
-													<li><a href="#" class="button small">Learn More</a></li>
-												</ul> -->
+												<ul class="buttons">
+													<li><a href="http://www.eugenewoodbury.com/shadow/index.html" class="button small">Read the Book</a></li>
+												</ul>
 											</footer>
 										</section>
 									</div>
@@ -144,11 +166,16 @@
 <!-- Two -->
 					<header class="special container" id="book2-title">
 						<span class="icon solid fa-book"></span>
-						<h2>Book2: <strong>Girl</strong> with <strong>sword</strong></h2>
+						<h2>A Thousand Leagues of Wind, the Sky at Dawn</h2>
 						<div class="narrow-width">
-						<p>We are familiar with western fantasy world, like Harry Potter, Game of Thrones. But do you know eastern fantasy world? Maybe you are a Japanese anime and you are familiar with One piece, Naruto. However, I guess you never watch, even didn’t heard this anime-the Twelve Kingdoms.</p>
-						<p>The work, the Twelve Kingdoms, originally is a series of fantasy novels wrote by Fuyumi Ono, then made into an anime in 2002. The author Fuyumi Ono created this fantasy world inspired by Chinese mythology, like Classic of Mountains and Seas, and ancient eastern organizational books, like Rites of Zhou. In addition, female characters under Fuyumi’s writing has enormous charm, who inspired me to firstly think about what kind of adult I want to be in the future.</p>
-						<p>As one of its’ big fans, I’d like to invite you to enjoy the unique world of the Twelve Kingdoms through data visualization.</p>
+						<p>The book focuses on three girls: Youko, Suzu, and Shoukei, talking about the growth of these three girls and how they become great friends.</p>
+						<p>As the new king of Kei, Youko is surrounded by advisors who bicker among themselves and offer contradictory advice. Desperate to learn enough about her kingdom to rule wisely, Youko is sent by Keiki to study with a wise teacher named Enho. When Enho is abducted, Youko seeks to solve Enho, only to discover that the corruption in her kingdom runs much deeper than she ever imagined.</p>
+						<p>Suzu Oki, a Kaikyaku, used to serve the cruel mistress Lady Riyo, want to meet Youko because they are both Kaikyakus. So she went to Kei to see Youko.</p>
+						<p>Shoukei used to be princess of the Kingdom of Hou. Her father was killed due to Shitsudou. And she quickly became a poor, heavy manual worker. She heard the new king of Kei is a girl of similar age with her. She was very jealous because she used to have a lot of jewelry, beautiful clothes. She wanted to take advantage of Youko. In this case, she stole the queen's jewelry to make her way to Kei.</p>
+						<p>Even if they went to the province of Ei in Kei for different reasons, all of them fought for the same thing in the end.</p>
+						<br>
+						<a class="image featured"><img src="images/qiong.png" alt="" /></a>
+						<p class="image_text" style="text-align: center;">Shoukei</p>
 					</div>
 					</header>
 
@@ -161,14 +188,17 @@
 										<div class="sidebar">
 											<section>
 												<header>
-													<h3>Magna Feugiat</h3>
+													<h3>Color of the Bubbles</h3>
 												</header>
-												<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit..</p>
-												<footer>
-													<ul class="buttons">
-														<li><a href="#" class="button small">Learn More</a></li>
-													</ul>
-												</footer>
+												<p class="dot1_text"><span class="dot1"></span>Main Characters</p>
+												<p class="dot2_text"><span class="dot2"></span>Good Characters</p>
+												<p class="dot3_text"><span class="dot3"></span>Evil Characters</p>
+												<p class="dot4_text"><span class="dot4"></span>Both Good and Evil Characters</p>
+												<p class="dot5_text"><span class="dot5"></span>Not Live Animals</p>
+												<br>
+												<p>The bubble represents how many times this word appears in the novel.</p>
+												<p>The thickness of the line represents the times these two words appear together.</p>
+												<p>If you hover on them, detailed information will appear in the tooltip.</p>
 											</section>
 
 											<section>
@@ -177,9 +207,10 @@
 													<h3>Amet Lorem Tempus</h3>
 												</header>
 												<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+
 												<footer>
 													<ul class="buttons">
-														<li><a href="#" class="button small">Learn More</a></li>
+														<li><a href="http://www.eugenewoodbury.com/wind/index.html" class="button small">Read the Book</a></li>
 													</ul>
 												</footer>
 											</section>
@@ -241,14 +272,17 @@
 									<div class="sidebar">
 										<section>
 											<header>
-												<h3>Magna Feugiat</h3>
+												<h3>Color of the Bubbles</h3>
 											</header>
-											<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit..</p>
-											<footer>
-												<!-- <ul class="buttons">
-													<li><a href="#" class="button small">Learn More</a></li>
-												</ul> -->
-											</footer>
+											<p class="dot1_text"><span class="dot1"></span>Main Characters</p>
+											<p class="dot2_text"><span class="dot2"></span>Good Characters</p>
+											<p class="dot3_text"><span class="dot3"></span>Evil Characters</p>
+											<p class="dot4_text"><span class="dot4"></span>Both Good and Evil Characters</p>
+											<p class="dot5_text"><span class="dot5"></span>Not Live Animals</p>
+											<br>
+											<p>The bubble represents how many times this word appears in the novel.</p>
+											<p>The thickness of the line represents the times these two words appear together.</p>
+											<p>If you hover on them, detailed information will appear in the tooltip.</p>
 										</section>
 
 										<section>
@@ -257,10 +291,11 @@
 												<h3>Amet Lorem Tempus</h3>
 											</header>
 											<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+
 											<footer>
-												<!-- <ul class="buttons">
-													<li><a href="#" class="button small">Learn More</a></li>
-												</ul> -->
+												<ul class="buttons">
+													<li><a href="http://www.eugenewoodbury.com/twilight/index.html" class="button small">Read the Book</a></li>
+												</ul>
 											</footer>
 										</section>
 									</div>
@@ -289,14 +324,17 @@
 					<div class="sidebar">
 						<section>
 							<header>
-								<h3>Magna Feugiat</h3>
+								<h3>Color of the Bubbles</h3>
 							</header>
-							<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit..</p>
-							<footer>
-								<ul class="buttons">
-									<li><a href="#" class="button small">Learn More</a></li>
-								</ul>
-							</footer>
+							<p class="dot1_text"><span class="dot1"></span>Main Characters</p>
+							<p class="dot2_text"><span class="dot2"></span>Good Characters</p>
+							<p class="dot3_text"><span class="dot3"></span>Evil Characters</p>
+							<p class="dot4_text"><span class="dot4"></span>Both Good and Evil Characters</p>
+							<p class="dot5_text"><span class="dot5"></span>Not Live Animals</p>
+							<br>
+							<p>The bubble represents how many times this word appears in the novel.</p>
+							<p>The thickness of the line represents the times these two words appear together.</p>
+							<p>If you hover on them, detailed information will appear in the tooltip.</p>
 						</section>
 
 						<section>
@@ -305,9 +343,10 @@
 								<h3>Amet Lorem Tempus</h3>
 							</header>
 							<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+
 							<footer>
 								<ul class="buttons">
-									<li><a href="#" class="button small">Learn More</a></li>
+									<li><a href="http://www.eugenewoodbury.com/tonan/index.html" class="button small">Read the Book</a></li>
 								</ul>
 							</footer>
 						</section>
@@ -369,14 +408,17 @@
 				<div class="sidebar">
 					<section>
 						<header>
-							<h3>Magna Feugiat</h3>
+							<h3>Color of the Bubbles</h3>
 						</header>
-						<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit..</p>
-						<footer>
-							<!-- <ul class="buttons">
-								<li><a href="#" class="button small">Learn More</a></li>
-							</ul> -->
-						</footer>
+						<p class="dot1_text"><span class="dot1"></span>Main Characters</p>
+						<p class="dot2_text"><span class="dot2"></span>Good Characters</p>
+						<p class="dot3_text"><span class="dot3"></span>Evil Characters</p>
+						<p class="dot4_text"><span class="dot4"></span>Both Good and Evil Characters</p>
+						<p class="dot5_text"><span class="dot5"></span>Not Live Animals</p>
+						<br>
+						<p>The bubble represents how many times this word appears in the novel.</p>
+						<p>The thickness of the line represents the times these two words appear together.</p>
+						<p>If you hover on them, detailed information will appear in the tooltip.</p>
 					</section>
 
 					<section>
@@ -385,10 +427,11 @@
 							<h3>Amet Lorem Tempus</h3>
 						</header>
 						<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+
 						<footer>
-							<!-- <ul class="buttons">
-								<li><a href="#" class="button small">Learn More</a></li>
-							</ul> -->
+							<ul class="buttons">
+								<li><a href="http://www.eugenewoodbury.com/east/index.html" class="button small">Read the Book</a></li>
+							</ul>
 						</footer>
 					</section>
 				</div>
@@ -417,14 +460,17 @@
 						<div class="sidebar">
 							<section>
 								<header>
-									<h3>Magna Feugiat</h3>
+									<h3>Color of the Bubbles</h3>
 								</header>
-								<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit..</p>
-								<footer>
-									<ul class="buttons">
-										<li><a href="#" class="button small">Learn More</a></li>
-									</ul>
-								</footer>
+								<p class="dot1_text"><span class="dot1"></span>Main Characters</p>
+								<p class="dot2_text"><span class="dot2"></span>Good Characters</p>
+								<p class="dot3_text"><span class="dot3"></span>Evil Characters</p>
+								<p class="dot4_text"><span class="dot4"></span>Both Good and Evil Characters</p>
+								<p class="dot5_text"><span class="dot5"></span>Not Live Animals</p>
+								<br>
+								<p>The bubble represents how many times this word appears in the novel.</p>
+								<p>The thickness of the line represents the times these two words appear together.</p>
+								<p>If you hover on them, detailed information will appear in the tooltip.</p>
 							</section>
 
 							<section>
@@ -433,9 +479,10 @@
 									<h3>Amet Lorem Tempus</h3>
 								</header>
 								<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+
 								<footer>
 									<ul class="buttons">
-										<li><a href="#" class="button small">Learn More</a></li>
+										<li><a href="http://www.eugenewoodbury.com/kasho/index.html" class="button small">Read the Book</a></li>
 									</ul>
 								</footer>
 							</section>
@@ -496,14 +543,17 @@
 				<div class="sidebar">
 					<section>
 						<header>
-							<h3>Magna Feugiat</h3>
+							<h3>Color of the Bubbles</h3>
 						</header>
-						<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit..</p>
-						<footer>
-							<!-- <ul class="buttons">
-								<li><a href="#" class="button small">Learn More</a></li>
-							</ul> -->
-						</footer>
+						<p class="dot1_text"><span class="dot1"></span>Main Characters</p>
+						<p class="dot2_text"><span class="dot2"></span>Good Characters</p>
+						<p class="dot3_text"><span class="dot3"></span>Evil Characters</p>
+						<p class="dot4_text"><span class="dot4"></span>Both Good and Evil Characters</p>
+						<p class="dot5_text"><span class="dot5"></span>Not Live Animals</p>
+						<br>
+						<p>The bubble represents how many times this word appears in the novel.</p>
+						<p>The thickness of the line represents the times these two words appear together.</p>
+						<p>If you hover on them, detailed information will appear in the tooltip.</p>
 					</section>
 
 					<section>
@@ -512,10 +562,11 @@
 							<h3>Amet Lorem Tempus</h3>
 						</header>
 						<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+
 						<footer>
-							<!-- <ul class="buttons">
-								<li><a href="#" class="button small">Learn More</a></li>
-							</ul> -->
+							<ul class="buttons">
+								<li><a href="http://www.eugenewoodbury.com/hisho/index.html" class="button small">Read the Book</a></li>
+							</ul>
 						</footer>
 					</section>
 				</div>
@@ -570,12 +621,12 @@
 									</header>
 									<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Sed id sem et massa ornare pellentesque. Maecenas pharetra porta accumsan. </p>
 									<section id="bullet"></section>
-									<video id="myVideo" controls autoplay>
+									<p id="myVideoComment"></p>
+									<video id="myVideo" controls>
 									  <source id="mp4_src" src="video/01.mp4" type="video/mp4">
 									  Your browser does not support HTML5 video.
 									</video>
-									<p id="myVideoComment"></p>
-									<p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus, non hendrerit ipsum arcu tristique est.</p>
+									<p id="description_video">In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus, non hendrerit ipsum arcu tristique est.</p>
 								</section>
 							</div>
 
@@ -617,6 +668,9 @@
 						<p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
 						<h2>Data, Analysis & Visualization</h2>
 						<p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
+						<ul class="buttons">
+							<li><a href="#" class="button small">Learn More</a></li>
+						</ul>
 					</header>
 
 				</section>
@@ -647,44 +701,8 @@
 		<script type="text/javascript" src="assets/js/book7.js"></script>
 		<script type="text/javascript" src="assets/js/book1to7.js"></script>
 		<script type="text/javascript" src="assets/js/bullet.js"></script>
-		<script>
-		function myFunction() {
-			var x = document.getElementById("bullet-select");
-			var i = x.selectedIndex;
-			var vid = document.getElementById("myVideo");
-			document.getElementById("myVideoComment").innerHTML = "The minute in " + x.options[i].text + " with biggesr number of bullet screen comments.";
-			// isSupp = vid.canPlayType("video/mp4");
-		  if (i == 0) {
-		    vid.src = "video/01.mp4";
-		  } else if (i == 1) {
-		    vid.src = "video/02.mp4";
-		  } else if (i == 2) {
-				vid.src = "video/03.mp4";
-			} else if (i == 3) {
-				vid.src = "video/04.mp4";
-			} else if (i == 4) {
-				vid.src = "video/05.mp4";
-			} else if (i == 5) {
-				vid.src = "video/06.mp4";
-			} else if (i == 6) {
-				vid.src = "video/07.mp4";
-			} else if (i == 7) {
-				vid.src = "video/08.mp4";
-			} else if (i == 8) {
-				vid.src = "video/09.mp4";
-			} else if (i == 9) {
-				vid.src = "video/10.mp4";
-			} else if (i == 10) {
-				vid.src = "video/11.mp4";
-			}
-		  vid.load();
-		}
-		//   var x = document.getElementById("bullet-select");
-		//   var i = x.selectedIndex;
-		// 	console.log(i);
-		//   document.getElementById("demo").innerHTML = x.options[i].text;
-		// }
-		</script>
+		<script type="text/javascript" src="assets/js/bullet_video.js"></script>
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

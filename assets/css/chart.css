@@ -61,6 +61,7 @@ div.tooltip {
   display: flex;
 }
 #myVideoComment {
+  margin-top: 3%;
   margin-bottom: 5%;
   text-align: center;
 }
@@ -68,4 +69,8 @@ div.tooltip {
 div.tooltip IMG {
   width: 200px;
   height: 200px;
+}
+
+.bullet_episode {
+  color: #d63447;
 }

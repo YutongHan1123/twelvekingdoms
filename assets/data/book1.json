@@ -1,7 +1,7 @@
 {"nodes":[
   {"category":"1","character":"Youko","id":0,"influence":1065,"zone":0,"race":"Human","intro":"Youko used to be a sixteen year old honour student in Japan who lives an ordinary life. One day, the school is attacked by a giant bird, and a man named Keiki gave her a sword and transports her across the Kyokai to the Twelve Kingdoms, where she ends up in the Kingdom of Kou.","img":"assets/data/book/book1/youko.png"},
   {"category":"2","character":"sword","id":1,"influence":297,"zone":3,"intro":"Suiguutou (水禺刀 Water Monkey Sword; Sword of Suiguu) is a sword that can be wielded only by the rightful ruler of Kei."},
-  {"category":"1","character":"Rakushun","id":2,"influence":306,"zone":1,"race":"Hanjyuu","intro":"He is a citizen of the Kingdom of Kou. His formal name is Chou Sei (張清). Youko's close friend.","img":"book/book1/youko.png"},
+  {"category":"1","character":"Rakushun","id":2,"influence":306,"zone":1,"race":"Hanjyuu","intro":"He is Youko's close friend. He took Youko back to home when Youko was in coma, . Then he taught her how to live in the world","img":"book/book1/youko.png"},
   {"category":"3","character":"youma","id":3,"influence":142,"zone":2,"intro":"Youma (妖魔, demon beasts) are creatures with supernatural powers, generally evil unless in the service of a kirin."},
   {"category":"1","character":"Keiki","id":4,"influence":181,"zone":1,"race":"Kirin","intro":"Keiki (景麒) is the kirin of Country Kei, Youko's assister.","img":"book/book1/youko.png"},
   {"category":"1","character":"Jouyuu","id":5,"influence":52,"zone":1,"race":"Youma","intro":"Jouyuu (冗祐) is one of Keiki's shirei. At the beginning of the series, Keiki orders Jouyuu to 'attach' to Youko to enable her to fight.","img":"book/book1/youko.png"},
