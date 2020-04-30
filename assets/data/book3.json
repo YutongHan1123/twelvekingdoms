@@ -12,15 +12,15 @@
   {"category":"1","character":"Shoku","id":10,"influence":59,"zone":4,"race":"Youma","intro":"","img":"book/book2/youko.png"},
   {"category":"1","character":"Shirei","id":11,"influence":80,"zone":4,"intro":"A large sea that surrounds the Twelve Kingdoms. It is impossible to sail across the Kyokai.","img":"book/book2/youko.png"},
   {"category":"1","character":"youma","id":12,"influence":44,"zone":2,"intro":""},
-  {"category":"1","character":"Taika","id":13,"influence":43,"zone":4,"intro":""},
-  {"category":"1","character":"Gouran","id":14,"influence":43,"zone":4,"race":"Kirin","intro":"","img":"book/book2/youko.png"},
+  {"category":"1","character":"Taika","id":13,"influence":45,"zone":4,"intro":""},
+  {"category":"1","character":"Gouran","id":14,"influence":43,"zone":3,"race":"Kirin","intro":"","img":"book/book2/youko.png"},
   {"category":"1","character":"Sanshi","id":15,"influence":69,"zone":1,"intro":"","img":"book/book2/youko.png"},
   {"category":"3","character":"Rokuta","id":16,"influence":120,"zone":1,"intro":"","img":"book/book2/youko.png"},
   {"category":"1","character":"Keiki","id":17,"influence":120,"zone":1,"intro":"","img":"book/book2/youko.png"},
   {"category":"3","character":"Shouryuu","id":18,"influence":64,"zone":1,"intro":"","img":"book/book2/youko.png"},
   {"category":"3","character":"Koshou","id":19,"influence":64,"zone":1,"intro":"","img":"book/book2/youko.png"},
   {"category":"1","character":"Imperial Kei","id":20,"influence":57,"zone":4,"intro":"","img":"book/book2/youko.png"},
-  {"category":"1","character":"Asen","id":21,"influence":120,"zone":1,"intro":"","img":"book/book2/youko.png"}
+  {"category":"1","character":"Asen","id":21,"influence":125,"zone":2,"intro":"","img":"book/book2/youko.png"}
 ],
 "links":[
   {"source":0,"target":1,"weight":67},
@@ -53,5 +53,13 @@
   {"source":2,"target":19,"weight":11},
   {"source":0,"target":19,"weight":13},
   {"source":0,"target":20,"weight":18},
-  {"source":0,"target":21,"weight":18}
+  {"source":0,"target":21,"weight":18},
+  {"source":3,"target":21,"weight":20},
+  {"source":5,"target":21,"weight":11},
+  {"source":1,"target":21,"weight":9},
+  {"source":2,"target":13,"weight":8},
+  {"source":1,"target":17,"weight":16},
+  {"source":5,"target":7,"weight":13},
+  {"source":9,"target":11,"weight":15},
+  {"source":11,"target":12,"weight":12}
 ]}

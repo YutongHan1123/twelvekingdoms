@@ -1,20 +1,22 @@
 {"nodes":[
   {"category":"1","character":"Shushou","id":0,"influence":713,"zone":0,"race":"Human","intro":"","img":"book/book3/youko.png"},
-  {"category":"1","character":"Gankyuu","id":1,"influence":522,"zone":1,"intro":""},
+  {"category":"1","character":"Gankyuu","id":1,"influence":522,"zone":0,"intro":""},
   {"category":"1","character":"youma","id":2,"influence":242,"zone":2,"race":"Hanjyuu","intro":""},
   {"category":"1","character":"Rikou","id":3,"influence":230,"zone":1,"intro":""},
-  {"category":"1","character":"Suugu","id":4,"influence":55,"zone":4,"race":"Kirin","intro":"","img":"book/book2/youko.png"},
-  {"category":"1","character":"Kinhak","id":5,"influence":74,"zone":1,"race":"Kirin","intro":"","img":"book/book2/youko.png"},
+  {"category":"1","character":"Suugu","id":4,"influence":55,"zone":3,"race":"Kirin","intro":"","img":"book/book2/youko.png"},
+  {"category":"1","character":"Kinhak","id":5,"influence":74,"zone":4,"race":"Kirin","intro":"","img":"book/book2/youko.png"},
   {"category":"1","character":"Yellow Sea","id":6,"influence":206,"zone":4,"race":"Human","intro":"","img":"book/book2/youko.png"},
   {"category":"1","character":"tree","id":7,"influence":92,"zone":4,"intro":"","img":"book/book2/youko.png"},
-  {"category":"1","character":"Kouchu","id":8,"influence":125,"zone":4,"race":"Human","intro":"","img":"book/book2/youko.png"},
+  {"category":"1","character":"Kouchu","id":8,"influence":125,"zone":3,"race":"Human","intro":"","img":"book/book2/youko.png"},
   {"category":"3","character":"Shouzan","id":9,"influence":117,"zone":4,"race":"Spirit","intro":"","img":"book/book2/youko.png"},
   {"category":"1","character":"emperor","id":10,"influence":58,"zone":4,"race":"Youma","intro":"","img":"book/book2/youko.png"},
-  {"category":"1","character":"goushi","id":11,"influence":145,"zone":4,"intro":"A large sea that surrounds the Twelve Kingdoms. It is impossible to sail across the Kyokai.","img":"book/book2/youko.png"},
-  {"category":"1","character":"Shushi","id":12,"influence":48,"zone":4,"intro":""},
+  {"category":"1","character":"goushi","id":11,"influence":145,"zone":3,"intro":"A large sea that surrounds the Twelve Kingdoms. It is impossible to sail across the Kyokai.","img":"book/book2/youko.png"},
+  {"category":"1","character":"Shushi","id":12,"influence":48,"zone":3,"intro":""},
   {"category":"1","character":"Kiwa","id":13,"influence":116,"zone":2,"intro":""},
   {"category":"1","character":"Hakuto","id":14,"influence":73,"zone":1,"race":"Kirin","intro":"","img":"book/book2/youko.png"},
-  {"category":"1","character":"Keika","id":15,"influence":39,"zone":1,"intro":"","img":"book/book2/youko.png"}
+  {"category":"1","character":"Keika","id":15,"influence":39,"zone":1,"intro":"","img":"book/book2/youko.png"},
+  {"category":"1","character":"Seisai","id":16,"influence":31,"zone":3,"intro":"","img":"book/book2/youko.png"},
+  {"category":"1","character":"Hakuto","id":17,"influence":73,"zone":3,"intro":"","img":"book/book2/youko.png"}
 ],
 "links":[
   {"source":0,"target":1,"weight":150},
@@ -38,5 +40,10 @@
   {"source":11,"target":13,"weight":21},
   {"source":13,"target":0,"weight":36},
   {"source":14,"target":0,"weight":34},
-  {"source":15,"target":0,"weight":19}
+  {"source":15,"target":0,"weight":19},
+  {"source":9,"target":0,"weight":11},
+  {"source":11,"target":6,"weight":21},
+  {"source":2,"target":6,"weight":16},
+  {"source":3,"target":16,"weight":15},
+  {"source":17,"target":0,"weight":34}
 ]}

@@ -61,30 +61,46 @@
 .setting_text1 {
   background-color: #f3c623;
   color: white;
+  padding: 0 8px;
 }
 .setting_text2 {
   background-color: #d63447;
   color: white;
+  padding: 0 8px;
 }
 .setting_text3 {
   background-color: #84a9ac;
   color: white;
+  padding: 0 8px;
 }
 .setting_text4 {
   background-color: #844685;
   color: white;
+  padding: 0 8px;
 }
 .setting_text5 {
   background-color: #cfd186;
   color: white;
+  padding: 0 8px;
 }
 
 .image_text {
   margin-top: 10px;
+  font-style: italic;
 }
+
+header.special p.image_text {
+  padding-top: 0;
+}
+
 @media screen and (min-width: 610px) {
   .image.featured {
     width: 500px;
+    display: block;
+    margin: 0 auto;
+  }
+  .featured_side {
+    width: 90%;
     display: block;
     margin: 0 auto;
   }

@@ -18,7 +18,7 @@ d3.csv(fileName, function(error, data) {
 
 var makeVis = function(episodeMap) {
     // Define dimensions of vis
-    var margin = { top: 50, right: 30, bottom: 30, left: 40 };
+    var margin = { top: 50, right: 10, bottom: 30, left: 40 };
         // width  = window.innerWidth*0.6 - margin.left - margin.right,
         // height = window.innerHeight/2 - margin.top  - margin.bottom;
 
@@ -95,11 +95,11 @@ var makeVis = function(episodeMap) {
         .attr("class", "y axis");
 
     rightAxis.append("text")
-        .attr("x", width+margin.right*3.8)
+        .attr("x", width*1.02)
         .attr("y", height+9)
         .attr("dy", ".71em")
         .style("text-anchor", "end")
-        .text("End of Episode");
+        .text("End");
 
     var updateBars = function(data) {
         // First update the y-axis domain to match data

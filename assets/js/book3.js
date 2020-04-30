@@ -34,12 +34,12 @@ d3.json("assets/data/book3.json", function(dataset){
           })
           .distance(function(d){
             if(d.weight > 34) {
-              return 120;
+              return 110;
             } else {
               return 40 + d.weight;
             }
           }))
-          .force("charge", d3.forceManyBody().strength(-400 ))
+          .force("charge", d3.forceManyBody().strength(-750 ))
           .force("center", d3.forceCenter(width03 / 2,height03 / 2));
 
   var svgElement03 = d3.select("#book3")

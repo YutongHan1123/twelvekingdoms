@@ -2,8 +2,8 @@
 var margin04 = {
   top: 0,
   bottom: 40,
-  right: 30,
-  left: 50
+  right: 20,
+  left: 60
 };
 var width04 = window.innerWidth*0.4 - margin04.left - margin04.right;
 var height04 = window.innerWidth*0.35 - margin04.top - margin04.bottom;
@@ -29,14 +29,14 @@ d3.json("assets/data/book4.json", function(dataset){
           })
           .distance(function(d){
             if(d.weight > 37) {
-              return d.weight*2 - 25;
+              return d.weight*2 - 20;
             } else if (37 > d.weight > 29) {
-              return 50 + d.weight*2;
+              return 55 + d.weight*2;
             } else {
-              return d.weight*4.5;
+              return d.weight*5;
             }
           }))
-          .force("charge", d3.forceManyBody().strength(-400 ))
+          .force("charge", d3.forceManyBody().strength(-600 ))
           .force("center", d3.forceCenter(width04 / 2,height04 / 2));
 
   var svgElement04 = d3.select("#book4")
@@ -124,7 +124,7 @@ d3.json("assets/data/book4.json", function(dataset){
             .attr("fill", "white")
             .attr('font-size', function(d){
                           if(d.influence > 170) {
-                            return d.influence*0.05;
+                            return d.influence*0.045;
                           } else {
                             return 0;
                           }
