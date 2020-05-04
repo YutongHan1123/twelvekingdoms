@@ -1,0 +1,20 @@
+{"nodes":[
+  {"category":"3","character":"Renka","id":0,"influence":214,"zone":0,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"3","character":"war","id":1,"influence":12,"zone":4,"intro":""},
+  {"category":"3","character":"Shikyou","id":2,"influence":93,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"3","character":"Meishu","id":3,"influence":32,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"3","character":"Choukou","id":4,"influence":36,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"3","character":"Seihaku","id":5,"influence":45,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"3","character":"Kakei","id":6,"influence":42,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"}
+],
+"links":[
+  {"source":0,"target":1,"weight":20},
+  {"source":0,"target":2,"weight":29},
+  {"source":0,"target":3,"weight":20},
+  {"source":0,"target":4,"weight":16},
+  {"source":0,"target":5,"weight":16},
+  {"source":2,"target":5,"weight":16},
+  {"source":2,"target":6,"weight":12},
+  {"source":0,"target":6,"weight":14},
+  {"source":5,"target":6,"weight":8}
+]}

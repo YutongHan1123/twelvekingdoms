@@ -18,39 +18,39 @@ d3.csv(fileName, function(error, data) {
 
 var makeVis = function(episodeMap) {
     // Define dimensions of vis
-    var margin = { top: 50, right: 10, bottom: 30, left: 40 };
+    var margin_video = { top: 50, right: 10, bottom: 30, left: 40 };
         // width  = window.innerWidth*0.6 - margin.left - margin.right,
         // height = window.innerHeight/2 - margin.top  - margin.bottom;
 
         if(window.innerWidth > 1120) {
-          width = window.innerWidth*0.6 - margin.left - margin.right;
-          height = window.innerHeight/2 - margin.top - margin.bottom;
+          width_video = window.innerWidth*0.6 - margin_video.left - margin_video.right;
+          height_video = window.innerHeight/2 - margin_video.top - margin_video.bottom;
         } else if(1120 >= window.innerWidth) {
-          width = window.innerWidth*0.75 - margin.left - margin.right;
-          height = window.innerHeight/2 - margin.top - margin.bottom;
+          width_video = window.innerWidth*0.75 - margin_video.left - margin_video.right;
+          height_video = window.innerHeight/2 - margin_video.top - margin_video.bottom;
         } else if(window.innerWidth <= 840) {
-          width = window.innerWidth - margin.left - margin.right;
-          height = window.innerHeight/2 - margin.top - margin.bottom;
+          width_video = window.innerWidth - margin_video.left - margin_video.right;
+          height_video = window.innerHeight/2 - margin_video.top - margin_video.bottom;
         }
 
     // Make x scale
     var xScale = d3.scaleBand()
         .domain(bulletFields)
-        .rangeRound([0, width])
+        .rangeRound([0, width_video])
         .padding(0.1);
 
     // Make y scale, the domain will be defined on bar update
     var yScale = d3.scaleLinear()
         .domain([0, 400])
-        .range([height, 0]);
+        .range([height_video, 0]);
 
     // Create canvas
     var canvas = d3.select("#bullet")
       .append("svg")
-        .attr("width",  width  + margin.left + margin.right*4)
-        .attr("height", height + margin.top  + margin.bottom)
+        .attr("width",  width_video  + margin_video.left + margin_video.right*4)
+        .attr("height", height_video + margin_video.top  + margin_video.bottom)
       .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        .attr("transform", "translate(" + margin_video.left + "," + margin_video.top + ")");
 
     // Make x-axis and add to canvas
     var xAxis = d3.axisBottom()
@@ -58,7 +58,7 @@ var makeVis = function(episodeMap) {
 
     canvas.append("g")
         .attr("class", "x axis")
-        .attr("transform", "translate(0," + height + ")")
+        .attr("transform", "translate(0," + height_video + ")")
         .call(xAxis);
 
     // Make y-axis and add to canvas
@@ -75,8 +75,8 @@ var makeVis = function(episodeMap) {
     var leftyAxis = canvas.append("g")
         .attr("class", "y axis");
     leftyAxis.append("text")
-        .attr("x", 0-margin.top/1.28)
-        .attr("y", 0-margin.top/1.5)
+        .attr("x", 0-margin_video.top/1.28)
+        .attr("y", 0-margin_video.top/1.5)
         .attr("dy", ".71em")
         .style("text-anchor", "start")
         .text("The Number of Comments on Bilibili per minute of episode");
@@ -86,7 +86,7 @@ var makeVis = function(episodeMap) {
 
     leftAxis.append("text")
         .attr("x", 10)
-        .attr("y", height+9)
+        .attr("y", height_video+9)
         .attr("dy", ".71em")
         .style("text-anchor", "end")
         .text("Start");
@@ -95,8 +95,8 @@ var makeVis = function(episodeMap) {
         .attr("class", "y axis");
 
     rightAxis.append("text")
-        .attr("x", width*1.02)
-        .attr("y", height+9)
+        .attr("x", width_video*1.02)
+        .attr("y", height_video+9)
         .attr("dy", ".71em")
         .style("text-anchor", "end")
         .text("End");
@@ -115,13 +115,13 @@ var makeVis = function(episodeMap) {
             .attr("x", function(d,i) { return xScale( bulletFields[i] ); })
             .attr("width", xScale.bandwidth())
             .attr("y", function(d,i) { return yScale(d); })
-            .attr("height", function(d,i) { return height - yScale(d); });
+            .attr("height", function(d,i) { return height_video - yScale(d); });
 
         // Update old ones, already have x / width from before
         bars
             .transition().duration(250)
             .attr("y", function(d,i) { return yScale(d); })
-            .attr("height", function(d,i) { return height - yScale(d); });
+            .attr("height", function(d,i) { return height_video - yScale(d); });
 
         // Remove old ones
         bars.exit().remove();

@@ -1,0 +1,20 @@
+{"nodes":[
+  {"category":"1","character":"Gekkei","id":0,"influence":159,"zone":0,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"Shouyou","id":1,"influence":63,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"3","character":"king","id":2,"influence":47,"zone":4,"race":"Human","intro":""},
+  {"category":"1","character":"Chuutatsu","id":3,"influence":43,"zone":2,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"3","character":"throne","id":4,"influence":35,"zone":4,"race":"Human","intro":""},
+  {"category":"1","character":"Chousai","id":5,"influence":25,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"Shoukei","id":6,"influence":40,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"}
+],
+"links":[
+  {"source":0,"target":1,"weight":27},
+  {"source":0,"target":2,"weight":26},
+  {"source":0,"target":3,"weight":15},
+  {"source":0,"target":4,"weight":13},
+  {"source":4,"target":2,"weight":12},
+  {"source":0,"target":4,"weight":8},
+  {"source":0,"target":4,"weight":8},
+  {"source":0,"target":5,"weight":8},
+  {"source":0,"target":6,"weight":8}
+]}

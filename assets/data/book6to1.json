@@ -1,0 +1,23 @@
+{"nodes":[
+  {"category":"1","character":"Taiki","id":0,"influence":184,"zone":0,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"Seirai","id":1,"influence":86,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"Gyousou","id":2,"influence":71,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"3","character":"king","id":3,"influence":30,"zone":4,"intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"Seitaku","id":4,"influence":42,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"Asen","id":5,"influence":20,"zone":2,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"Renrin","id":6,"influence":10,"zone":1,"race":"Kirin","intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"Tansui","id":7,"influence":22,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"}
+],
+"links":[
+  {"source":0,"target":1,"weight":34},
+  {"source":0,"target":2,"weight":33},
+  {"source":0,"target":3,"weight":24},
+  {"source":0,"target":4,"weight":16},
+  {"source":4,"target":3,"weight":12},
+  {"source":2,"target":4,"weight":11},
+  {"source":2,"target":3,"weight":8},
+  {"source":1,"target":5,"weight":6},
+  {"source":0,"target":5,"weight":6},
+  {"source":4,"target":6,"weight":6},
+  {"source":0,"target":7,"weight":6}
+]}

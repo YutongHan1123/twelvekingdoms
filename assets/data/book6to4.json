@@ -1,0 +1,29 @@
+{"nodes":[
+  {"category":"1","character":"Shishou","id":0,"influence":241,"zone":0,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"Shuka","id":1,"influence":221,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"Eishuku","id":2,"influence":137,"zone":2,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"3","character":"king","id":3,"influence":87,"zone":4,"race":"Human","intro":""},
+  {"category":"1","character":"Seiki","id":4,"influence":118,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"Junkou","id":5,"influence":92,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"3","character":"Kasho","id":6,"influence":57,"zone":4,"race":"Human","intro":""},
+  {"category":"1","character":"Sairin","id":7,"influence":58,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"Shinshi","id":8,"influence":34,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"}
+],
+"links":[
+  {"source":0,"target":1,"weight":46},
+  {"source":2,"target":1,"weight":49},
+  {"source":0,"target":3,"weight":44},
+  {"source":0,"target":2,"weight":44},
+  {"source":4,"target":1,"weight":29},
+  {"source":0,"target":5,"weight":28},
+  {"source":4,"target":0,"weight":22},
+  {"source":6,"target":0,"weight":21},
+  {"source":1,"target":7,"weight":21},
+  {"source":2,"target":4,"weight":20},
+  {"source":5,"target":4,"weight":18},
+  {"source":0,"target":7,"weight":17},
+  {"source":1,"target":8,"weight":11},
+  {"source":2,"target":5,"weight":11},
+  {"source":3,"target":7,"weight":13},
+  {"source":5,"target":6,"weight":16}
+]}

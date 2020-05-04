@@ -1,0 +1,28 @@
+{"nodes":[
+  {"category":"1","character":"Eikou","id":0,"influence":231,"zone":0,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"Shudatsu","id":1,"influence":153,"zone":3,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"death","id":2,"influence":99,"zone":4,"intro":""},
+  {"category":"1","character":"Sotsuyuu","id":3,"influence":55,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"Jokyuu","id":4,"influence":61,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"Hogetsu","id":5,"influence":47,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"Seika","id":6,"influence":49,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"punishment","id":7,"influence":48,"zone":4,"intro":""},
+  {"category":"1","character":"Riri","id":8,"influence":38,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"}
+],
+"links":[
+  {"source":0,"target":1,"weight":34},
+  {"source":2,"target":1,"weight":28},
+  {"source":2,"target":0,"weight":22},
+  {"source":3,"target":0,"weight":22},
+  {"source":4,"target":0,"weight":21},
+  {"source":5,"target":0,"weight":20},
+  {"source":6,"target":0,"weight":18},
+  {"source":3,"target":4,"weight":16},
+  {"source":2,"target":7,"weight":14},
+  {"source":2,"target":4,"weight":14},
+  {"source":1,"target":3,"weight":14},
+  {"source":1,"target":4,"weight":13},
+  {"source":2,"target":3,"weight":11},
+  {"source":0,"target":8,"weight":10},
+  {"source":1,"target":7,"weight":9}
+]}

@@ -1,0 +1,21 @@
+{"nodes":[
+  {"category":"1","character":"Hyouchuu","id":0,"influence":283,"zone":0,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"3","character":"tree","id":1,"influence":179,"zone":4,"intro":""},
+  {"category":"1","character":"Houkou","id":2,"influence":134,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"Kyoukei","id":3,"influence":73,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"3","character":"imperial","id":4,"influence":52,"zone":4,"intro":""},
+  {"category":"3","character":"yaboku","id":5,"influence":46,"zone":4,"intro":""},
+  {"category":"3","character":"emperor","id":6,"influence":46,"zone":4,"intro":""}
+],
+"links":[
+  {"source":0,"target":1,"weight":29},
+  {"source":0,"target":2,"weight":48},
+  {"source":3,"target":2,"weight":25},
+  {"source":3,"target":0,"weight":23},
+  {"source":4,"target":0,"weight":19},
+  {"source":1,"target":2,"weight":16},
+  {"source":0,"target":5,"weight":15},
+  {"source":0,"target":6,"weight":14},
+  {"source":2,"target":5,"weight":11},
+  {"source":1,"target":5,"weight":11}
+]}
