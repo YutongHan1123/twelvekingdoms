@@ -24,7 +24,7 @@ var makeVis = function(episodeMap) {
 
         if(window.innerWidth > 1120) {
           width_video = window.innerWidth*0.6 - margin_video.left - margin_video.right;
-          height_video = window.innerHeight/2 - margin_video.top - margin_video.bottom;
+          height_video = window.innerHeight/1.9 - margin_video.top - margin_video.bottom;
         } else if(1120 >= window.innerWidth) {
           width_video = window.innerWidth*0.75 - margin_video.left - margin_video.right;
           height_video = window.innerHeight/2 - margin_video.top - margin_video.bottom;

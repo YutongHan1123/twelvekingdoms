@@ -2,7 +2,7 @@ function myFunction() {
   var x = document.getElementById("bullet-select");
   var i = x.selectedIndex;
   var vid = document.getElementById("myVideo");
-  document.getElementById("myVideoComment").innerHTML = "The minute in <span class='bullet_episode'>" + x.options[i].text + "</span> with biggesr number of bullet screen comments.";
+  document.getElementById("myVideoComment").innerHTML = "In <span class='bullet_episode'>" + x.options[i].text + "</span>, below is one miunte video with the biggest number of bullet screen comments.";
   // isSupp = vid.canPlayType("video/mp4");
   if (i == 0) {
     vid.src = "video/01.mp4";
