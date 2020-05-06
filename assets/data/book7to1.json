@@ -1,11 +1,11 @@
 {"nodes":[
-  {"category":"1","character":"Hisho","id":0,"influence":175,"zone":0,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"Hisho","id":0,"influence":175,"zone":0,"race":"Human","intro":"","img":"assets/data/book/book7/youko.png"},
   {"category":"3","character":"Shouran","id":1,"influence":66,"zone":4,"intro":""},
   {"category":"3","character":"bird","id":2,"influence":81,"zone":4,"intro":""},
-  {"category":"1","character":"Seikou","id":3,"influence":65,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"Seikou","id":3,"influence":65,"zone":1,"race":"Human","intro":"","img":"assets/data/book/book7/youko.png"},
   {"category":"3","character":"empress","id":4,"influence":70,"zone":4,"intro":""},
   {"category":"3","character":"Sekichou","id":5,"influence":27,"zone":4,"intro":""},
-  {"category":"1","character":"Suiryou","id":6,"influence":26,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"Suiryou","id":6,"influence":26,"zone":1,"race":"Human","intro":"","img":"assets/data/book/book7/youko.png"},
   {"category":"3","character":"throne","id":7,"influence":16,"zone":4,"intro":""}
 ],
 "links":[

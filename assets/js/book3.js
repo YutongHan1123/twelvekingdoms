@@ -33,10 +33,23 @@ d3.json("assets/data/book3.json", function(dataset){
               return i;
           })
           .distance(function(d){
-            if(d.weight > 34) {
-              return 110;
-            } else {
-              return 40 + d.weight;
+            // if(d.weight > 34) {
+            //   return 110;
+            // } else {
+            //   return 40 + d.weight;
+            // }
+            if(window.innerWidth > 1200) {
+              if(d.weight > 34) {
+                return 110;
+              } else {
+                return 40 + d.weight*2;
+              }
+            } else if(window.innerWidth <= 1200) {
+              if(d.weight > 34) {
+                return 20;
+              } else {
+                return d.weight*0.2;
+              }
             }
           }))
           .force("charge", d3.forceManyBody().strength(-750 ))

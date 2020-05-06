@@ -1,5 +1,8 @@
 var fileName = "assets/data/bullet.csv";
 var bulletFields = ["1", "2","3", "4", "5", "6", "7", "8","9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24"];
+var div_bullet = d3.select("#bullet").append("div")
+          .attr("class", "tooltip")
+          .style("opacity", 0);
 
 d3.csv(fileName, function(error, data) {
     var episodeMap = {};
@@ -115,8 +118,20 @@ var makeVis = function(episodeMap) {
             .attr("x", function(d,i) { return xScale( bulletFields[i] ); })
             .attr("width", xScale.bandwidth())
             .attr("y", function(d,i) { return yScale(d); })
-            .attr("height", function(d,i) { return height_video - yScale(d); });
-
+            .attr("height", function(d,i) { return height_video - yScale(d); })
+            .on("mousemove", function(d,i) {
+              div_bullet.transition()
+        						.duration(200)
+        						.style("opacity", .9);
+        			div_bullet.html("<p>Minute: " + bulletFields[i] + " </p> <p>Number of comments: " + d + "</p>")
+        						.style("left", (d3.event.pageX) + "px")
+        						.style("top", (d3.event.pageY - 28) + "px");
+        						})
+            .on("mouseout", function(d){
+              div_bullet.transition()
+             .duration(500)
+             .style("opacity", 0);
+          });
         // Update old ones, already have x / width from before
         bars
             .transition().duration(250)
@@ -140,6 +155,7 @@ var makeVis = function(episodeMap) {
 
     var dropdown = d3.select("#bullet")
         .insert("select", "svg")
+        .attr("class", "minimal")
         .attr("id", "bullet-select")
         .attr("onchange", "myFunction()")
         .on("change", dropdownChange);

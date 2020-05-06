@@ -1,6 +1,6 @@
 //Set margins and sizes
 var margin02 = {
-  top: 0,
+  top: 30,
   bottom: 50,
   right: 30,
   left: 0
@@ -9,12 +9,18 @@ var margin02 = {
 var width02;
 var height02;
 
-if(window.innerWidth > 840) {
+if(window.innerWidth > 1000) {
   width02 = window.innerWidth*0.5 - margin02.left - margin02.right;
   height02 = window.innerWidth*0.45 - margin02.top - margin02.bottom;
-} else if(window.innerWidth <= 840) {
+} else if(window.innerWidth<= 1000 && window.innerWidth > 840) {
+  width02 = window.innerWidth*0.6 - margin02.left - margin02.right;
+  height02 = window.innerWidth*0.45 - margin02.top - margin02.bottom;
+} else if(window.innerWidth<= 840 && window.innerWidth > 620) {
   width02 = window.innerWidth - margin02.left - margin02.right;
-  height02 = window.innerWidth*0.8 - margin02.top - margin02.bottom;
+  height02 = window.innerWidth*0.55 - margin02.top - margin02.bottom;
+} else if(window.innerWidth <= 620) {
+  width02 = window.innerWidth - margin02.left - margin02.right;
+  height02 = window.innerWidth*0.7 - margin02.top - margin02.bottom;
 }
 
 //Load Color Scale
@@ -31,7 +37,7 @@ d3.json("assets/data/book2.json", function(dataset){
   //Extract data from dataset
   var nodes02 = dataset.nodes,
     links02 = dataset.links;
-    console.log(dataset);
+    //console.log(dataset);
   //Create Force Layout
   var force02 = d3.forceSimulation()
           .force("link", d3.forceLink().id(function(d,i) {
@@ -147,7 +153,11 @@ d3.json("assets/data/book2.json", function(dataset){
             .attr('font-size', function(d){
               if(window.innerWidth > 1200) {
                 if(d.influence > 170) {
-                  return d.influence*0.055;
+                  if(d.character.length < 6){
+                    return d.influence*0.06;
+                  } else {
+                    return d.influence*0.046;
+                  }
                 } else {
                   return 0;
                 }

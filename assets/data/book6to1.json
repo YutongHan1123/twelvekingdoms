@@ -1,12 +1,12 @@
 {"nodes":[
-  {"category":"1","character":"Taiki","id":0,"influence":184,"zone":0,"race":"Human","intro":"","img":"book/book3/youko.png"},
-  {"category":"1","character":"Seirai","id":1,"influence":86,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
-  {"category":"1","character":"Gyousou","id":2,"influence":71,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
-  {"category":"3","character":"king","id":3,"influence":30,"zone":4,"intro":"","img":"book/book3/youko.png"},
-  {"category":"1","character":"Seitaku","id":4,"influence":42,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
-  {"category":"1","character":"Asen","id":5,"influence":20,"zone":2,"race":"Human","intro":"","img":"book/book3/youko.png"},
-  {"category":"1","character":"Renrin","id":6,"influence":10,"zone":1,"race":"Kirin","intro":"","img":"book/book3/youko.png"},
-  {"category":"1","character":"Tansui","id":7,"influence":22,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"}
+  {"category":"1","character":"Taiki","id":0,"influence":184,"zone":0,"race":"Human","intro":"","img":"assets/data/book/book6/youko.png"},
+  {"category":"1","character":"Seirai","id":1,"influence":86,"zone":1,"race":"Human","intro":"","img":"assets/data/book/book6/youko.png"},
+  {"category":"1","character":"Gyousou","id":2,"influence":71,"zone":1,"race":"Human","intro":"","img":"assets/data/book/book6/youko.png"},
+  {"category":"3","character":"king","id":3,"influence":30,"zone":4,"intro":"","img":"assets/data/book/book6/youko.png"},
+  {"category":"1","character":"Seitaku","id":4,"influence":42,"zone":1,"race":"Human","intro":"","img":"assets/data/book/book6/youko.png"},
+  {"category":"1","character":"Asen","id":5,"influence":20,"zone":2,"race":"Human","intro":"","img":"assets/data/book/book6/youko.png"},
+  {"category":"1","character":"Renrin","id":6,"influence":10,"zone":1,"race":"Kirin","intro":"","img":"assets/data/book/book6/youko.png"},
+  {"category":"1","character":"Tansui","id":7,"influence":22,"zone":1,"race":"Human","intro":"","img":"assets/data/book/book6/youko.png"}
 ],
 "links":[
   {"source":0,"target":1,"weight":34},

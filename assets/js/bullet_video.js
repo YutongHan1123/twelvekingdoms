@@ -6,22 +6,22 @@ function myFunction() {
   // isSupp = vid.canPlayType("video/mp4");
   if (i == 0) {
     vid.src = "video/01.mp4";
-    document.getElementById("description_video").innerHTML = "New text!";
+    document.getElementById("description_video").innerHTML = "It’s the first time Youko met with Keiki. Fans teased Keiki is the worst kirin in communication. And they call Keiki “cake” because the sound of Keiki is similar to cake. Also, some fans said we should cherish the time Youko is still girly. In the future, the role of Youko and Keiki will be turned around.";
   } else if (i == 1) {
     vid.src = "video/02.mp4";
-    document.getElementById("description_video").innerHTML = "test2";
+    document.getElementById("description_video").innerHTML = "Because Keiki feels a shower of blood, and kirins can’t stand blood, he falls into a coma. The fans worried about him and complained about the king of Kou. Since the king of Kou instigated Kourin to stop Youko’s ascending the throne, Kourin hurt Keiki in this way. She is also afraid of blood, but can’t defy her king’s order.";
   } else if (i == 2) {
     vid.src = "video/03.mp4";
-    document.getElementById("description_video").innerHTML = "test3";
+    document.getElementById("description_video").innerHTML = "Youko trusts Takki, whose true intention is to sell Youko to Takki's mother, the mistress of a brothel, as a slave. The fans worried about her safety, thought that she completely exposes her weaknesses, and is therefore disarming. They said Youko is too naïve, needs to quickly grow up.";
   } else if (i == 3) {
     vid.src = "video/04.mp4";
-    document.getElementById("description_video").innerHTML = "test3";
+    document.getElementById("description_video").innerHTML = "Monkey shows how Youko’s classmates dislike her through the sword. Actually, the sword will show the phantom of the user’s imagination. Maybe Youko’s classmates worry about her, but Youko lost trust and suspect herself. The fans want Youko to cheer up. And they think the character monkey is great. He represents the seamy side of the voice of the people’s hearts.";
   } else if (i == 4) {
     vid.src = "video/05.mp4";
-    document.getElementById("description_video").innerHTML = "test3";
+    document.getElementById("description_video").innerHTML = "Rokuta made his first appearance in the anime. He came to the country Kei to see the new if empress ascended the throne. On the way, he repulsed the youma. The fans are laughing that Rokuta looks like a child, much younger than Keiki. In fact, Rokuta is five hundred years older than Keiki, a totally old guy!";
   } else if (i == 5) {
     vid.src = "video/06.mp4";
-    document.getElementById("description_video").innerHTML = "test3";
+    document.getElementById("description_video").innerHTML = "Rakushun made his first appearance in the anime. He saved fainted Youko due to a lack of food and rest. No fan dislike Rakushun! He is so cute, so adorable. The fans call him “Rakushun little angel”. Youko waked up and didn’t trust him because she just escaped from Takki’s hand. But Rakushun treated her nicely and introduce himself to her.";
   } else if (i == 6) {
     vid.src = "video/07.mp4";
     document.getElementById("description_video").innerHTML = "test3";

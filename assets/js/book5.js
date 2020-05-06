@@ -124,7 +124,11 @@ d3.json("assets/data/book5.json", function(dataset){
             .attr("fill", "white")
             .attr('font-size', function(d){
                           if(d.influence > 170) {
-                            return d.influence*0.055;
+                            if(d.character.length < 6){
+                              return d.influence*0.055;
+                            } else {
+                              return d.influence*0.04;
+                            }
                           } else {
                             return 0;
                           }

@@ -1,18 +1,24 @@
 var margin = {
 		top: 0,
-		bottom: 20,
+		bottom: 0,
 		right: 30,
-		left: 50
+		left: 0
 	};
 	var width;
 	var height;
 
-	if(window.innerWidth > 840) {
+	if(window.innerWidth > 1200) {
 	  width = window.innerWidth*0.5 - margin.left - margin.right;
 	  height = window.innerWidth*0.4 - margin.top - margin.bottom;
-	} else if(window.innerWidth <= 840) {
+	} else if(window.innerWidth<= 1200 && window.innerWidth > 840) {
+		width = window.innerWidth*0.5 - margin.left - margin.right;
+	  height = window.innerWidth*0.6 - margin.top - margin.bottom;
+	} else if(window.innerWidth<= 840 && window.innerWidth > 680) {
+		width = window.innerWidth - margin.left - margin.right;
+		height = window.innerWidth*0.7 - margin.top - margin.bottom;
+	} else if(window.innerWidth <= 680) {
 	  width = window.innerWidth - margin.left - margin.right;
-	  height = window.innerWidth*0.7 - margin.top - margin.bottom;
+	  height = window.innerWidth - margin.top - margin.bottom;
 	}
 	//Load Color Scale
 	var colordata = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
@@ -128,7 +134,11 @@ var margin = {
 							.attr("fill", "white")
 						  .attr('font-size', function(d){
 														if(d.influence > 180) {
-															return d.influence*0.05;
+															if(d.character.length < 7){
+																return d.influence*0.05;
+															} else {
+																return d.influence*0.04;
+															}
 														} else {
 															return 0;
 														}

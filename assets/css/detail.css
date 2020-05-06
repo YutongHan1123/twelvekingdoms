@@ -105,9 +105,37 @@ header.special p.image_text {
     margin: 0 auto;
   }
 }
+@media screen and (max-width: 609px) {
+  .image.featured {
+    width: 92%;
+    display: block;
+    margin: 0 auto;
+  }
+  .featured_side {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 601px) {
   #description_video {
     width: 600px;
+    display: block;
+    margin: 0 auto;
+  }
+  .narrow-width {
+  	width: 600px;
+  	margin: 0 auto;
+  }
+}
+@media screen and (max-width: 601px) {
+  .narrow-width {
+  	width: 92%;
+  	margin: 0 auto;
+  }
+  #description_video {
+    width: 92%;
     display: block;
     margin: 0 auto;
   }
@@ -119,6 +147,39 @@ header.special p.image_text {
   height: 75px;
   margin-top: -75px;
   visibility: hidden;
+}
+#book1-title::before, #book1-title::after, #book2-title::before, #book2-title::after, #book3-title::before, #book3-title::after, #book4-title::before, #book4-title::after, #book5-title::before, #book5-title::after, #book6-title::before, #book6-title::after, #book7-title::before, #book7-title::after {
+  height: 0px;
+  margin-top: 0px;
+  visibility: visible;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  text-transform: none !important;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  line-height: inherit;
+}
+
+#video-bilibili::before, #video-bilibili::after, #bullet-screen-comments::before, #bullet-screen-comments::after, #bottom-comments::before, #bottom-comments::after {
+  height: 0px;
+  margin-top: 0px;
+  visibility: visible;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  text-transform: none !important;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  line-height: inherit;
 }
 
 .main_character {

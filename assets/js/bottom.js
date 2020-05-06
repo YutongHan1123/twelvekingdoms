@@ -84,21 +84,21 @@ d3.json("assets/data/bottom.json", function(dataset){
             div08.transition()
           .duration(200)
           .style("opacity", .9);
-      div08.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p> Race: " + d.race + "</p> <p>Intro: " + d.intro +"</p>")
+      div08.html("<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p>")
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY - 28) + "px");
         } else if (d.category == 2){
           div08.transition()
         .duration(200)
         .style("opacity", .9);
-    div08.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
+    div08.html("<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p>")
         .style("left", (d3.event.pageX) + "px")
         .style("top", (d3.event.pageY - 28) + "px");
       } else if (d.category == 3){
           div08.transition()
         .duration(200)
         .style("opacity", .9);
-    div08.html("<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
+    div08.html("<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p>")
         .style("left", (d3.event.pageX) + "px")
         .style("top", (d3.event.pageY - 28) + "px");
         }
@@ -124,7 +124,7 @@ d3.json("assets/data/bottom.json", function(dataset){
             .attr("fill", "white")
             .attr('font-size', function(d){
                           if(d.influence > 400) {
-                            console.log(d.character.length)
+                            // console.log(d.character.length);
                             if(d.character.length < 7){
                               return d.influence*0.0235;
                             } else {
@@ -139,21 +139,21 @@ d3.json("assets/data/bottom.json", function(dataset){
               div08.transition()
             .duration(200)
             .style("opacity", .9);
-        div08.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p> Race: " + d.race + "</p> <p>Intro: " + d.intro +"</p>")
+        div08.html("<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p>")
             .style("left", (d3.event.pageX) + "px")
             .style("top", (d3.event.pageY - 28) + "px");
           } else if (d.category == 2){
             div08.transition()
           .duration(200)
           .style("opacity", .9);
-      div08.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
+      div08.html("<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p>")
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY - 28) + "px");
         } else if (d.category == 3){
             div08.transition()
           .duration(200)
           .style("opacity", .9);
-      div08.html("<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
+      div08.html("<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p>")
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY - 28) + "px");
           }
@@ -184,21 +184,21 @@ d3.json("assets/data/bottom.json", function(dataset){
               div08.transition()
             .duration(200)
             .style("opacity", .9);
-        div08.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p> Race: " + d.race + "</p> <p>Intro: " + d.intro +"</p>")
+        div08.html("<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p>")
             .style("left", (d3.event.pageX) + "px")
             .style("top", (d3.event.pageY - 28) + "px");
           } else if (d.category == 2){
             div08.transition()
           .duration(200)
           .style("opacity", .9);
-      div08.html("<img src='" + d.img +"'>" + "<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
+      div08.html("<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p>")
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY - 28) + "px");
         } else if (d.category == 3){
             div08.transition()
           .duration(200)
           .style("opacity", .9);
-      div08.html("<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p> <p>Intro: " + d.intro +"</p>")
+      div08.html("<p> Name: " + d.character + "</p> <p> Frequency: " + d.influence + "</p>")
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY - 28) + "px");
           }

@@ -1,8 +1,8 @@
 {"nodes":[
-  {"category":"1","character":"Rikou","id":0,"influence":82,"zone":0,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"Rikou","id":0,"influence":82,"zone":0,"race":"Human","intro":"","img":"assets/data/book/book6/youko.png"},
   {"category":"1","character":"king","id":1,"influence":52,"zone":4,"intro":""},
   {"category":"1","character":"Ryuu","id":2,"influence":37,"zone":4,"intro":""},
-  {"category":"1","character":"Fuukan","id":3,"influence":33,"zone":1,"race":"Human","intro":"","img":"book/book3/youko.png"},
+  {"category":"1","character":"Fuukan","id":3,"influence":33,"zone":1,"race":"Human","intro":"","img":"assets/data/book/book6/youko.png"},
   {"category":"1","character":"Sou","id":4,"influence":32,"zone":4,"intro":""},
   {"category":"1","character":"En","id":5,"influence":26,"zone":4,"intro":""}
 ],
