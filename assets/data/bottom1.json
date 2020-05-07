@@ -1,0 +1,10 @@
+{"nodes":[
+  {"category":"1","character":"anime","id":0,"influence":1816,"zone":4,"race":"Human","intro":"","img":"assets/data/book/book7/youko.png"},
+  {"category":"3","character":"time","id":1,"influence":961,"zone":4,"intro":""},
+  {"category":"3","character":"watch","id":2,"influence":669,"zone":4,"intro":""}
+],
+"links":[
+  {"source":0,"target":1,"weight":321},
+  {"source":0,"target":2,"weight":409},
+  {"source":2,"target":1,"weight":224}
+]}

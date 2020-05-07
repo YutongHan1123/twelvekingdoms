@@ -1,3 +1,13 @@
+.italic {
+  font-style: italic;
+}
+.book-number {
+  font-size: 2em;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin-bottom: 0;
+}
+
 .dot1 {
   height: 15px;
   width: 15px;
@@ -185,4 +195,7 @@ header.special p.image_text {
 .main_character {
   text-align: center;
   color: #f3c623;
+}
+.cta h2{
+  margin-bottom: 0.35em;
 }

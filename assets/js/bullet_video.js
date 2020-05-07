@@ -2,7 +2,7 @@ function myFunction() {
   var x = document.getElementById("bullet-select");
   var i = x.selectedIndex;
   var vid = document.getElementById("myVideo");
-  document.getElementById("myVideoComment").innerHTML = "In <span class='bullet_episode'>" + x.options[i].text + "</span>, below is one miunte video with the biggest number of bullet screen comments.";
+  document.getElementById("myVideoComment").innerHTML = "In <span class='bullet_episode'>" + x.options[i].text + "</span>, below is one minute video with the biggest number of bullet screen comments.";
   // isSupp = vid.canPlayType("video/mp4");
   if (i == 0) {
     vid.src = "video/01.mp4";
@@ -24,7 +24,7 @@ function myFunction() {
     document.getElementById("description_video").innerHTML = "Rakushun made his first appearance in the anime. He saved fainted Youko due to a lack of food and rest. No fan dislike Rakushun! He is so cute, so adorable. The fans call him “Rakushun little angel”. Youko waked up and didn’t trust him because she just escaped from Takki’s hand. But Rakushun treated her nicely and introduce himself to her.";
   } else if (i == 6) {
     vid.src = "video/07.mp4";
-    document.getElementById("description_video").innerHTML = "test3";
+    document.getElementById("description_video").innerHTML = "Finally, Youko defeated the monster, monkey, in her mind. He became brave, not always acted according to the real situation. Some fans said that’s due to the love from Rakushun.";
   } else if (i == 7) {
     vid.src = "video/08.mp4";
     document.getElementById("description_video").innerHTML = "test3";
